@@ -4,9 +4,16 @@
 .video-presentation {
   text-align: center;
   padding-top: 35px;
+
 }
 
 .video-presentation__intro {
   @include zero;
   padding: 35px 25px 40px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.video-presentation-header {
+  @include font-large;
 }

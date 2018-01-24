@@ -21,5 +21,7 @@
   text-align: center;
 
   @include zero;
+  @include font-small;
   margin-top: 35px;
+  color: #333333;
 }

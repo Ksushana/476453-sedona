@@ -2,9 +2,30 @@
 @import "../mixins";
 
 .page-main__head {
-  padding-top: 55px;
+  margin-top: 55px;
   text-align: center;
 }
+
+.page-main__head-image {
+  background-color: #dceaf3;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+
+  &--long {
+    min-height: 390px;
+  }
+
+  &--short {
+    min-height: 160px;
+    background-size: 100%;
+    background-position: right;
+  }
+}
+
+
 
 .page-main__header {
   @include zero;
@@ -15,6 +36,7 @@
   @include zero;
   padding-top: 30px;
   padding-bottom: 30px;
+  color: #333333;
 }
 
 .page-main__intro--photo {
@@ -25,4 +47,23 @@
 .page-main__intro--form {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+
+.page-main__img-top {
+  position: absolute;
+
+  &--short {
+    top: 20px;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+  }
+
+  &--long {
+  top: 20px;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
 }

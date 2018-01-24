@@ -10,6 +10,7 @@
 }
 
 .accomodation__header {
+  color: rgba(0, 0, 0, .7);
   font-size: 21px;
   line-height: 26px;
 }
@@ -17,6 +18,8 @@
 .accomodation__request {
   @include zero;
   padding-top: 24px;
+  line-height: 24px;
+  color: #333333;
 }
 
 .accomodation__button {

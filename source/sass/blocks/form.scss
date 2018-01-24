@@ -23,3 +23,14 @@
 .form__textarea {
   width: 100%;
 }
+
+.form__label {
+  @include font-small;
+  color: #333333;
+}
+
+.radio__item label,
+.checkbox__item label {
+  font-weight: bold;
+  padding-left: 70px;
+}
