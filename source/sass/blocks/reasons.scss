@@ -1,0 +1,25 @@
+@import "../variables";
+@import "../mixins";
+
+.reasons {
+  text-align: center;
+  padding-top: 44px;
+}
+
+.reasons__header {
+  font-weight: 26px;
+  margin: 0 30px;
+  padding-bottom: 30px;
+}
+
+.reasons__slogan {
+  @include font-large;
+  font-weight: bold;
+}
+
+.reasons__intro {
+  text-align: center;
+
+  @include zero;
+  margin-top: 35px;
+}

@@ -1,0 +1,28 @@
+@import "../variables";
+@import "../mixins";
+
+.page-main__head {
+  padding-top: 55px;
+  text-align: center;
+}
+
+.page-main__header {
+  @include zero;
+  padding-top: 40px;
+}
+
+.page-main__intro {
+  @include zero;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.page-main__intro--photo {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.page-main__intro--form {
+  padding-left: 15px;
+  padding-right: 15px;
+}

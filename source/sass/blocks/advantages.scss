@@ -1,0 +1,43 @@
+@import "../variables";
+@import "../mixins";
+
+.advantages {
+  @include zero;
+  @include list-reset;
+}
+
+.advantages__item {
+  background-color: $grey;
+
+  @include zero;
+  padding-top: 30px;
+
+  &:first-child {
+    padding-top: 60px;
+    background-color: $blue;
+    color: #ffffff;
+  }
+
+  &:nth-child(2) {
+    padding-top: 43px;
+    background-color: $blue;
+    color: #ffffff;
+  }
+
+  &:nth-child(n+3) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+.advantages__header {
+  @include zero;
+  @include font-large;
+  padding-bottom: 15px;
+}
+
+.advantages__description {
+  @include zero;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}

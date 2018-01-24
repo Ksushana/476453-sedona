@@ -1,0 +1,12 @@
+@import "../variables";
+@import "../mixins";
+
+.video-presentation {
+  text-align: center;
+  padding-top: 35px;
+}
+
+.video-presentation__intro {
+  @include zero;
+  padding: 35px 25px 40px;
+}

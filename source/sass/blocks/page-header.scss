@@ -1,0 +1,16 @@
+@import "../variables";
+@import "../mixins";
+
+.page-header {
+  background-color: #81b3d2;
+}
+
+.page-header__logo {
+  width: 102px;
+  height: 83px;
+}
+
+.page-header__logo-image {
+  overflow: hidden;
+  margin: 0 auto;
+}

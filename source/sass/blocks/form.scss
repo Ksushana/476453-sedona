@@ -1,0 +1,25 @@
+@import "../variables";
+@import "../mixins";
+
+
+.form fieldset {
+  border: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.form__legend {
+  text-align: center;
+  font-weight: bold;
+
+  @include font-large;
+  @include zero;
+}
+
+.full-name__label {
+  display: flex;
+}
+
+.form__textarea {
+  width: 100%;
+}

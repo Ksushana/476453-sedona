@@ -1,0 +1,25 @@
+@import "../variables";
+@import "../mixins";
+
+
+.features {
+  @include list-reset;
+  @include zero;
+  @include black-font;
+  text-align: left;
+  padding-left: 70px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+.features__header {
+  @include font-large;
+  @include zero;
+  text-transform: uppercase;
+  padding-top: 35px;
+}
+
+.features-note {
+  @include zero;
+  padding-top: 19px;
+}
