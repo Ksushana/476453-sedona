@@ -1,0 +1,37 @@
+@import "../variables";
+@import "../mixins";
+
+.photo {
+  line-height: 24px;
+}
+
+.photo__header,
+.photo__author {
+  @include zero;
+}
+
+.photo__header {
+  padding-top: 19px;
+}
+
+.photo__author {
+  text-transform: none;
+  padding-top: 10px;
+  color: #333333;
+}
+
+.photo__popularity {
+  display: flex;
+  padding-top: 5px;
+}
+
+.photo__likes-ammount {
+  padding-left: 15px;
+}
+
+.photo__likes {
+  width: 22px;
+  height: 20px;
+  background-image: image("./img/icon-like.svg");
+  outline: none;
+}

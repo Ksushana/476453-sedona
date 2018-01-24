@@ -1,0 +1,50 @@
+
+@mixin zero {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin list-reset {
+  list-style: none;
+}
+
+@mixin font-small {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+@mixin font-large {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@mixin font-huge {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+@mixin black-font {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@mixin white-font {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@mixin padding-mobile {
+  padding-left: 25px;
+  padding-right: 25px;
+}

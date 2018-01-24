@@ -1,0 +1,21 @@
+@import "../variables";
+@import "../mixins";
+
+.social__list {
+  @include list-reset;
+  @include zero;
+
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+  background-color: $blue;
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

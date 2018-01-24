@@ -1,0 +1,36 @@
+@import "../variables";
+@import "../mixins";
+
+.main-nav {
+  position: relative;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  height: 21px;
+  width: 23px;
+}
+
+.main-nav__list {
+  @include list-reset;
+  @include zero;
+}
+
+.main-nav__item {
+  @include flex-center;
+  height: 55px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
+}
+
+.main-nav__link {
+  color: #ffffff;
+  text-decoration: none;
+}

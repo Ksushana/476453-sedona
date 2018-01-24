@@ -1,0 +1,12 @@
+@import "../variables";
+@import "../mixins";
+
+
+.copyright {
+  @include font-small;
+}
+
+.copyright__text {
+  @include zero;
+  padding-right: 50px;
+}
