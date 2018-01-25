@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="102" height="83" src="" alt="City of Sedona">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="102" height="83" alt="City of Sedona">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -35,12 +34,13 @@
     <main class="page-main">
       <section class="page-main__head">
         <div class="page-main__head-image page-main__head-image--short">
-          <img class="page-main__img-top page-main__img-top--short" src="img/text-sedona.svg" width="320" height="390">
+          <img class="page-main__img-top page-main__img-top--short" src="img/text-sedona.svg" width="320" height="390" alt="Sedona">
         </div>
         <h1  class="page-main__header">Фото и видео</h1>
         <p class="page-main__intro page-main__intro--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
       <section class="gallery">
+        <h2 class="visually-hidden">Фотогалерея</h2>
         <article class="gallery-item photo">
           <div class="photo__image">
             <img src="img/photo-sunset-mobile@1x.jpg" alt="неродные просторы" width="280" height="280">
@@ -95,18 +95,19 @@
         </article>
       </section>
       <article class="video-presentation">
+        <h2 class="visually-hidden">Видео о Седоне</h2>
         <section class="video-presentation__top">
           <h2 class="visually-hidden">Посмотрите видеопрезентацию о Седоне</h2>
           <b class="video-presentation-header">Все еще сомневаетесь?</b>
           <p class="video-presentation__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </section>
-        <section class="video-presentation__content">
+        <div class="video-presentation__content">
           <video width="319" height="201" controls poster="img/video-mobile@1x.jpg">
-            <source src="URL" type="">
+            <source src="URL">
           </video>
           <div class="video-presentation__controls">
           </div>
-        </section>
+        </div>
       </article>
     </main>
     <footer class="page-footer">

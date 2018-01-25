@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
     <header class="page-header">
       <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="102" height="83" src="" alt="City of Sedona">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="102" height="83" alt="City of Sedona">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -35,12 +34,13 @@
     <main class="page-main">
       <section class="page-main__head">
         <div class="page-main__head-image page-main__head-image--short">
-          <img class="page-main__img-top page-main__img-top--short" src="img/text-sedona.svg" width="320" height="390">
+          <img class="page-main__img-top page-main__img-top--short" src="img/text-sedona.svg" width="320" height="390" alt="Sedona">
         </div>
         <h1  class="page-main__header">Оставьте свой отзыв</h1>
         <p class="page-main__intro page-main__intro--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <section class="feedback">
+        <h2 class="visually-hidden">Оставьте свой отзыв</h2>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="form__full-name full-name">
             <legend class="form__legend full-name__legend">Представьтесь:</legend>
@@ -75,7 +75,7 @@
           <legend class="form__legend checkbox__legend">Посещенные достопримечательности:</legend>
           <div  class="checkbox__inputs">
               <p class="checkbox__item">
-                <input  class="visually-hidden" type="checkbox" name="attraction" id="devil" value="Мост Дьявола"checked>
+                <input  class="visually-hidden" type="checkbox" name="attraction" id="devil" value="Мост Дьявола" checked>
                 <label for="devil">Мост Дьявола</label>
               </p>
               <p class="checkbox__item">
@@ -97,7 +97,7 @@
           <textarea class="form__textarea" rows="5"  placeholder="Опишите подробно все свои восторги">
           </textarea>
           </fieldset>
-          <button class="button form__button"type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+          <button class="button form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
         </form>
       </section>
     </main>
