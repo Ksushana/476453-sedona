@@ -25,3 +25,27 @@
 .accomodation__button {
   margin-top: 38px;
 }
+
+
+@media (min-width: 768px) {
+  .accomodation {
+    padding-top: 55px;
+  }
+  .accomodation__header {
+    font-size: 30px;
+    color: #000000;
+  }
+  .accomodation__request {
+    padding: 35px 160px 45px;
+  }
+  .accomodation__button {
+    width: 458px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .accomodation__request {
+    padding: 35px 380px 45px;
+  }
+}

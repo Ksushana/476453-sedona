@@ -34,3 +34,24 @@
   color: #ffffff;
   text-decoration: none;
 }
+
+@media (min-width: 768px) {
+  .main-nav {
+    color: #000000;
+  }
+.main-nav__toggle {
+  display: none;
+}
+.main-nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+.main-nav__item {
+  height: 56px;
+  border-bottom: none;
+  border-top: none;
+}
+.main-nav__link {
+  color: #000000;
+}
+}

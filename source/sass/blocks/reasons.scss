@@ -3,13 +3,15 @@
 
 .reasons {
   text-align: center;
-  padding-top: 44px;
+  @include flex-column;
 }
 
 .reasons__header {
+  padding-top: 44px;
   font-weight: 26px;
   margin: 0 30px;
   padding-bottom: 30px;
+  @include flex-column;
 }
 
 .reasons__slogan {
@@ -24,4 +26,24 @@
   @include font-small;
   margin-top: 35px;
   color: #333333;
+}
+
+@media (min-width: 768px) {
+  .reasons__header {
+    padding-top: 50px;
+  }
+  .reasons__slogan{
+    font-size: 21px;
+    margin: 0 130px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reasons__slogan {
+    margin-right: 350px;
+    margin-left: 350px;
+  }
+  .reasons__intro {
+    font-size: 21px;
+  }
 }
