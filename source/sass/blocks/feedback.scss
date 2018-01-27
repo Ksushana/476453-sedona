@@ -1,7 +1,9 @@
 @import "../variables";
 @import "../mixins";
 
-.feedback {
-  padding-left: 20px;
-  padding-right: 20px;
+
+@media (min-width: 768px) {
+  .feedback {
+    padding: 60px 60px 0;
+  }
 }

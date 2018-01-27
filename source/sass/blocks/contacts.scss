@@ -1,2 +1,10 @@
 @import "../variables";
 @import "../mixins";
+
+.contacts__label {
+  margin-bottom: 18px;
+}
+
+.contacts__label input{
+  margin-top: 11px;
+}

@@ -1,8 +1,12 @@
 @import "../variables";
 @import "../mixins";
 
+.form {
+  @include flex-column;
+}
 
 .form fieldset {
+  display: flex;
   border: none;
   margin: 0;
   padding: 20px;
@@ -16,10 +20,6 @@
   @include zero;
 }
 
-.full-name__label {
-  display: flex;
-}
-
 .form__textarea {
   width: 100%;
 }
@@ -29,8 +29,29 @@
   color: #333333;
 }
 
+.form__label input {
+  background-color: $dark-grey;
+  border: none;
+  flex-grow: 1;
+  min-height: 58px;
+}
+
 .radio__item label,
 .checkbox__item label {
   font-weight: bold;
   padding-left: 70px;
+}
+
+
+@media (min-width: 768px) {
+
+  .form__radio {
+    order: -1;
+    width: 323px;
+  }
+
+  .form__contacts {
+    max-width: 323px;
+  }
+
 }
