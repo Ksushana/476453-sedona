@@ -3,6 +3,7 @@
 
 .reasons {
   text-align: center;
+
   @include flex-column;
 }
 
@@ -11,6 +12,7 @@
   font-weight: 26px;
   margin: 0 30px;
   padding-bottom: 30px;
+
   @include flex-column;
 }
 
@@ -32,7 +34,8 @@
   .reasons__header {
     padding-top: 50px;
   }
-  .reasons__slogan{
+
+  .reasons__slogan {
     font-size: 21px;
     margin: 0 130px;
   }
@@ -43,6 +46,7 @@
     margin-right: 350px;
     margin-left: 350px;
   }
+
   .reasons__intro {
     font-size: 21px;
   }

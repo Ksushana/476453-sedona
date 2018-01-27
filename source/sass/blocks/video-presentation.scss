@@ -21,12 +21,15 @@
   .video-presentation {
     padding-top: 65px;
   }
+
   .video-presentation-header {
     font-size: 30px;
   }
+
   .video-presentation__intro {
     padding: 35px 175px 40px;
-}
+  }
+
   .video-presentation__content video {
     width: 648px;
   }
@@ -35,8 +38,9 @@
 @media (min-width: 1200px) {
   .video-presentation__intro {
     padding: 35px 380px 40px;
-}
-.video-presentation__content video {
-  width: 802px;
-}
+  }
+
+  .video-presentation__content video {
+    width: 802px;
+  }
 }

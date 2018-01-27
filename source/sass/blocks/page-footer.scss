@@ -23,11 +23,12 @@
     justify-content: space-around;
     align-items: center;
   }
+
   .page-footer__social {
     @include zero;
   }
+
   .page-footer__copyright {
     display: flex;
   }
-
 }

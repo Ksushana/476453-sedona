@@ -41,10 +41,12 @@
     min-width: 324px;
     height: 267px;
   }
+
   .photo__image--big img {
     min-width: 648px;
     height: 400px;
   }
+
   .photo__info {
     background-color: $dark-grey;
   }
@@ -55,10 +57,12 @@
     min-width: 400px;
     height: 267px;
   }
+
   .photo__image--big img {
     min-width: 1200px;
     height: 400px;
   }
+
   .photo__info {
     background-color: rgba(0, 0, 0, 0.3);
     height: 80px;
