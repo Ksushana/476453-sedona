@@ -76,5 +76,26 @@
     min-height: 518px;
     background-size: 100%;
     }
+
+    &--short {
+      min-height: 290px;
+    }
+  }
+  .page-main__header {
+    font-size: 30px;
+  }
+  .page-main__intro {
+    padding-left: 170px;
+    padding-right: 170px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-main__header {
+    font-size: 30px;
+  }
+  .page-main__intro {
+    padding-left: 380px;
+    padding-right: 380px;
   }
 }
