@@ -17,6 +17,8 @@
 
 @mixin list-reset {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 @mixin font-small {
@@ -47,4 +49,12 @@
 @mixin padding-mobile {
   padding-left: 25px;
   padding-right: 25px;
+}
+
+@mixin tablet {
+  min-width: 368px;
+}
+
+@mixin desktop {
+  min-width: 1200px;
 }

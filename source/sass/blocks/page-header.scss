@@ -2,7 +2,7 @@
 @import "../mixins";
 
 .page-header {
-  background-color: #81b3d2;
+  background-color: $blue;
   position: relative;
 }
 
@@ -15,4 +15,17 @@
 .page-header__logo-image {
   overflow: hidden;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header__logo {
+    width: 186px;
+    height: 96px;
+  }
 }

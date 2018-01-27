@@ -24,3 +24,25 @@
   padding-top: 19px;
   color: #333333;
 }
+
+
+@media (min-width: 768px) {
+  .features {
+    display: flex;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .features__header {
+    padding-top: 160px;
+  }
+
+  .features__item {
+    padding-left: 35px;
+    padding-right: 35px;
+
+    &:nth-child(2) {
+      order: 3;
+    }
+  }
+}

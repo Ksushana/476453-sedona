@@ -1,8 +1,33 @@
+@font-face {
+  font-family: "PT Sans", "Arial", sans-serif;
+  src: url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  src: url("../fonts/ptsansbold.woff") format("woff"), url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -29,12 +54,37 @@ span {
   display: block;
 }
 
+.body {
+  min-width: 320px;
+}
 
 .container {
   margin: 0 auto;
-  max-width: 320px;
-  min-width: 320px;
+  width: 320px;
 }
+
+@media (min-width: 768px) {
+  .body {
+    @include tablet;
+  }
+
+  .container {
+    width: 768px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .body {
+    @include desktop;
+  }
+
+  .container {
+    width: 1200px;
+    padding: 0;
+  }
+}
+
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -53,7 +103,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   @include flex-center;
-  width: 280px;
+  min-width: 280px;
   height: 57px;
   background-color: $blue;
   font-size: 21px;

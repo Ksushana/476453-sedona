@@ -3,4 +3,18 @@
 
 iframe {
   border: none;
+  width: 320px;
+  height: 350px;
+}
+
+@media (min-width: 768px) {
+  iframe {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  iframe {
+    width: 1200px;
+  }
 }
