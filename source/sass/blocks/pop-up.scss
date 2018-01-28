@@ -24,3 +24,43 @@
 .pop-up__button {
   margin: 27px auto 0;
 }
+
+@media (min-width: 768px) {
+  .pop-up--error {
+    height: 347px;
+    width: 400px;
+  }
+
+  .pop-up--success {
+    height: 347px;
+    width: 638px;
+  }
+
+  .pop-up__header {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .pop-up--error .pop-up__header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .pop-up--success .pop-up__note {
+    margin: 0 110px;
+  }
+
+  .pop-up__button--wrapper {
+    width: 638px;
+    height: 145px;
+    background-color: $dark-grey;
+    margin-top: 40px;
+    display: flex;
+  }
+
+  .pop-up__button {
+    justify-content: center;
+    align-self: center;
+    margin-top: 0;
+  }
+}

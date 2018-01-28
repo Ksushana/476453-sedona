@@ -54,8 +54,10 @@
 
           <fieldset class="form__contacts contacts">
             <legend class="form__legend contacts__legend">Контактная информация:</legend>
-            <label class="form__label contacts__label"> Контактный телефон*: <input type="tel" required name="Введите телефон" placeholder="Введите телефон"></label>
-            <label class="form__label contacts__label"> Электронная почта*: <input type="email" required name="Введите e-mail" placeholder="Введите e-mail"></label>
+            <div class="contacts__wrapper">
+              <label class="form__label contacts__label"> <span class="contacts__label--shorten">Контактный</span> телефон*: <input type="tel" class="form__tel" required name="Введите телефон" placeholder="Введите телефон"></label>
+              <label class="form__label contacts__label"> Электронная почта*: <input class="form__email" type="email" required name="Введите e-mail" placeholder="Введите e-mail"></label>
+            </div>
           </fieldset>
 
           <fieldset class="form__radio radio">
@@ -104,6 +106,7 @@
             </textarea>
           </fieldset>
           <button class="button form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+          <p class="form__note">* — обязательные поля</p>
         </form>
       </section>
     </main>
@@ -124,7 +127,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
     </footer>
 
@@ -137,7 +140,7 @@
     <article class="pop-up pop-up--success">
       <h2 class="pop-up__header">Ваш отзыв отправлен!</h2>
       <p class="pop-up__note">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button type="button" class="pop-up__button button">Закрыть окно</button>
+      <div class="pop-up__button--wrapper"><button type="button" class="pop-up__button button">Закрыть окно</button></div>
     </article>
 </div>
   </body>

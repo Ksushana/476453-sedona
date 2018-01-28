@@ -5,6 +5,36 @@
   margin-bottom: 18px;
 }
 
+.contacts__label--shorten {
+  display: inline;
+}
+
 .contacts__label input{
   margin-top: 11px;
+  margin-bottom: 18px;
+}
+
+@media (min-width: 1200px) {
+  .contacts__wrapper {
+    display: flex;
+  }
+
+  .contacts__label {
+    flex-grow: 1;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+
+    &:nth-child(2) {
+      margin-left: 40px;
+    }
+
+    &--shorten {
+      display: none;
+    }
+  }
+
+  .contacts__label input {
+    margin-left: 16px;
+  }
 }
