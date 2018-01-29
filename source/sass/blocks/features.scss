@@ -54,10 +54,12 @@
     &--souvenir {
       padding-left: 10px;
       padding-right: 55px;
-   }
-}
+    }
+  }
+
   .features__header {
     padding-top: 150px;
+
     @include font-huge;
   }
 
@@ -66,15 +68,15 @@
     padding-left: 12px;
     padding-right: 18px;
 
-      &--food {
-        padding-left: 25px;
-        padding-right: 25px;
-      }
+    &--food {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
 
-      &--souvenir {
-        padding-left: 0;
-        padding-right: 0;
-      }
+    &--souvenir {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 
@@ -93,14 +95,14 @@
     padding-left: 0;
     padding-right: 0;
 
-      &--food {
-        padding-left: 25px;
-        padding-right: 25px;
-      }
+    &--food {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
 
-      &--souvenir {
-        padding-left: 0;
-        padding-right: 0;
-      }
+    &--souvenir {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
