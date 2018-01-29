@@ -3,12 +3,13 @@
 
 .video-presentation {
   text-align: center;
-  padding-top: 35px;
+  padding-top: 30px;
+  padding-bottom: 105px;
 }
 
 .video-presentation__intro {
   @include zero;
-  padding: 35px 25px 40px;
+  padding: 25px 25px 35px;
   line-height: 24px;
   color: #333333;
 }
@@ -20,6 +21,7 @@
 @media (min-width: 768px) {
   .video-presentation {
     padding-top: 65px;
+    padding-bottom: 38px;
   }
 
   .video-presentation-header {
@@ -27,17 +29,23 @@
   }
 
   .video-presentation__intro {
-    padding: 35px 175px 40px;
+    padding: 30px 175px 70px;
   }
 
   .video-presentation__content video {
     width: 648px;
+    height: 500px;
   }
 }
 
 @media (min-width: 1200px) {
+  .video-presentation {
+    padding-top: 75px;
+    // padding-bottom: 38px;
+  }
+
   .video-presentation__intro {
-    padding: 35px 380px 40px;
+    padding: 25px 380px 70px;
   }
 
   .video-presentation__content video {

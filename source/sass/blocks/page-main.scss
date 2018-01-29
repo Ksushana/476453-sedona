@@ -28,6 +28,10 @@
 .page-main__header {
   @include zero;
   padding-top: 40px;
+
+  &--foto {
+    @include font-large;
+  }
 }
 
 .page-main__intro {
@@ -35,11 +39,13 @@
   padding-top: 30px;
   padding-bottom: 30px;
   color: #333333;
-}
 
-.page-main__intro--photo {
+  &--photo {
   padding-left: 25px;
   padding-right: 25px;
+  padding-top: 25px;
+  line-height: 24px;
+}
 }
 
 .page-main__intro--form {
@@ -85,6 +91,11 @@
 
   .page-main__header {
     font-size: 30px;
+
+    &--foto {
+      padding-top: 75px;
+      padding-bottom: 5px;
+    }
   }
 
   .page-main__intro {
@@ -101,10 +112,18 @@
 @media (min-width: 1200px) {
   .page-main__header {
     font-size: 30px;
+
+    &--foto {
+      padding-top: 112px;
+    }
   }
 
   .page-main__intro {
     padding-left: 380px;
     padding-right: 380px;
+  }
+
+  .page-main__head-image--short {
+    height: 302px;
   }
 }

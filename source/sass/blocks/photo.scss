@@ -11,12 +11,12 @@
 }
 
 .photo__header {
-  padding-top: 19px;
+  padding-top: 17px;
+  font-size: inherit;
 }
 
 .photo__author {
   text-transform: none;
-  padding-top: 10px;
   color: #333333;
 }
 
@@ -42,6 +42,10 @@
     height: 267px;
   }
 
+  .photo__image--big {
+    padding-top: 38px;
+  }
+
   .photo__image--big img {
     min-width: 648px;
     height: 400px;
@@ -49,6 +53,8 @@
 
   .photo__info {
     background-color: $dark-grey;
+    height: 80px;
+    padding-left: 20px;
   }
 }
 
