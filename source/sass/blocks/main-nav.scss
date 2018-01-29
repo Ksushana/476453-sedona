@@ -43,6 +43,8 @@
 @media (min-width: 768px) {
   .main-nav {
     color: #000000;
+
+    @include font-small;
   }
 
   .main-nav__toggle {
@@ -51,13 +53,25 @@
 
   .main-nav__list {
     display: flex;
-    justify-content: space-around;
   }
 
   .main-nav__item {
     height: 56px;
     border-bottom: none;
     border-top: none;
+
+      &--main {
+        margin-left: 50px;
+        margin-right: 77px;
+      }
+
+      &--foto {
+        margin-right: 209px;
+      }
+
+      &--form {
+        margin-right: 50px;
+      }
   }
 
   .main-nav__item a {
@@ -66,5 +80,23 @@
 
   .main-nav__link {
     color: #000000;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav__item {
+
+      &--main {
+        margin-left: 90px;
+        margin-right: 162px;
+      }
+
+      &--foto {
+        margin-right: 382px;
+      }
+
+      &--form {
+        margin-right: 137px;
+      }
   }
 }
