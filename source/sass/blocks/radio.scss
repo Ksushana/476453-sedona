@@ -1,2 +1,22 @@
 @import "../variables";
 @import "../mixins";
+
+.radio__item {
+  text-transform: none;
+}
+
+.radio__item label {
+  font-weight: bold;
+  padding-left: 80px;
+}
+
+@media (min-width: 768px) {
+  .radio__item label {
+    @include font-large;
+  }
+
+  .radio__inputs {
+    @include flex-column;
+    margin-top: auto;
+  }
+}

@@ -30,6 +30,11 @@
   border-top: 1px solid #9ac2db;
 }
 
+.main-nav__item a {
+  color: #ffffff;
+}
+
+
 .main-nav__link {
   color: #ffffff;
   text-decoration: none;
@@ -53,6 +58,10 @@
     height: 56px;
     border-bottom: none;
     border-top: none;
+  }
+
+  .main-nav__item a {
+    color: #000000;
   }
 
   .main-nav__link {

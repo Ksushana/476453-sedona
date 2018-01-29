@@ -90,6 +90,11 @@
   .page-main__intro {
     padding-left: 170px;
     padding-right: 170px;
+
+    &--form {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
   }
 }
 

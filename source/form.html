@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -48,56 +51,62 @@
             <label class="form__label full-name__label"> Фамилия*: <input type="text" required name="Фамилия" placeholder="Иванов"></label>
             <label class="form__label full-name__label"> Отчество: <input type="text" name="Отчество" placeholder="Александрович"></label>
           </fieldset>
+
           <fieldset class="form__contacts contacts">
             <legend class="form__legend contacts__legend">Контактная информация:</legend>
-            <label class="form__label contacts__label"> Контактный телефон*: <input type="tel" required name="Введите телефон" placeholder="Введите телефон"></label>
-            <label class="form__label contacts__label"> Электронная почта*: <input type="email" required name="Введите e-mail" placeholder="Введите e-mail"></label>
-          </fieldset>
-          <fieldset class="form__radio radio">
-          <legend class="form__legend radio__legend">Ваше общее впечатление:</legend>
-          <div  class="radio__inputs">
-              <p class="radio__item">
-                <input class="visually-hidden" type="radio" name="impression" value="Скорее положительное" id="positive" checked>
-                <label for="positive">Скорее положительное</label>
-              </p>
-              <p class="radio__item">
-                <input class="visually-hidden" type="radio" name="impression" value="Скорее отрицательное" id="negative">
-                <label for="negative">Скорее отрицательное</label>
-              </p>
-              <p class="radio__item">
-                <input class="visually-hidden" type="radio" name="impression" value="Затрудняюсь ответить" id="neutral">
-                <label for="neutral">Затрудняюсь ответить</label>
-              </p>
+            <div class="contacts__wrapper">
+              <label class="form__label contacts__label"> <span class="contacts__label--shorten">Контактный</span> телефон*: <input type="tel" class="form__tel" required name="Введите телефон" placeholder="Введите телефон"></label>
+              <label class="form__label contacts__label"> Электронная почта*: <input class="form__email" type="email" required name="Введите e-mail" placeholder="Введите e-mail"></label>
             </div>
           </fieldset>
 
-          <fieldset  class="form__checkbox checkbox">
-          <legend class="form__legend checkbox__legend">Посещенные достопримечательности:</legend>
-          <div  class="checkbox__inputs">
-              <p class="checkbox__item">
-                <input  class="visually-hidden" type="checkbox" name="attraction" id="devil" value="Мост Дьявола" checked>
-                <label for="devil">Мост Дьявола</label>
-              </p>
-              <p class="checkbox__item">
-                <input class="visually-hidden" type="checkbox" name="attraction" id="slide" value="Слайд-парк" checked>
-                <label for="slide">Слайд-парк</label>
-              </p>
-              <p class="checkbox__item">
-                <input class="visually-hidden" type="checkbox" name="attraction" id="bell" value="Гора-Колокол">
-                <label for="bell">Гора-Колокол</label>
-              </p>
-              <p class="checkbox__item">
-                <input class="visually-hidden" type="checkbox" name="attraction" id="rocks" value="Красные скалы" checked>
-                <label for="rocks">Красные скалы</label>
-              </p>
-            </div>
+          <fieldset class="form__radio radio">
+            <legend class="form__legend radio__legend">Ваше общее впечатление:</legend>
+            <div  class="radio__inputs">
+                <p class="radio__item">
+                  <input class="visually-hidden" type="radio" name="impression" value="Скорее положительное" id="positive" checked>
+                  <label for="positive">Скорее положительное</label>
+                </p>
+                <p class="radio__item">
+                  <input class="visually-hidden" type="radio" name="impression" value="Скорее отрицательное" id="negative">
+                  <label for="negative">Скорее отрицательное</label>
+                </p>
+                <p class="radio__item">
+                  <input class="visually-hidden" type="radio" name="impression" value="Затрудняюсь ответить" id="neutral">
+                  <label for="neutral">Затрудняюсь ответить</label>
+                </p>
+              </div>
           </fieldset>
+
+          <fieldset  class="form__checkbox checkbox">
+            <legend class="form__legend checkbox__legend">Посещенные достопримечательности:</legend>
+            <div  class="checkbox__inputs">
+                <p class="checkbox__item">
+                  <input  class="visually-hidden" type="checkbox" name="attraction" id="devil" value="Мост Дьявола" checked>
+                  <label for="devil">Мост Дьявола</label>
+                </p>
+                <p class="checkbox__item">
+                  <input class="visually-hidden" type="checkbox" name="attraction" id="slide" value="Слайд-парк" checked>
+                  <label for="slide">Слайд-парк</label>
+                </p>
+                <p class="checkbox__item">
+                  <input class="visually-hidden" type="checkbox" name="attraction" id="bell" value="Гора-Колокол">
+                  <label for="bell">Гора-Колокол</label>
+                </p>
+                <p class="checkbox__item">
+                  <input class="visually-hidden" type="checkbox" name="attraction" id="rocks" value="Красные скалы" checked>
+                  <label for="rocks">Красные скалы</label>
+                </p>
+              </div>
+          </fieldset>
+
           <fieldset class="form__text">
-          <legend class="form__legend">Опишите свои эмоции:</legend>
-          <textarea class="form__textarea" rows="5"  placeholder="Опишите подробно все свои восторги">
-          </textarea>
+            <legend class="form__legend">Опишите свои эмоции:</legend>
+            <textarea class="form__textarea" rows="5"  placeholder="Опишите подробно все свои восторги">
+            </textarea>
           </fieldset>
           <button class="button form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+          <p class="form__note">* — обязательные поля</p>
         </form>
       </section>
     </main>
@@ -118,7 +127,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
     </footer>
 
@@ -131,7 +140,7 @@
     <article class="pop-up pop-up--success">
       <h2 class="pop-up__header">Ваш отзыв отправлен!</h2>
       <p class="pop-up__note">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button type="button" class="pop-up__button button">Закрыть окно</button>
+      <div class="pop-up__button--wrapper"><button type="button" class="pop-up__button button">Закрыть окно</button></div>
     </article>
 </div>
   </body>

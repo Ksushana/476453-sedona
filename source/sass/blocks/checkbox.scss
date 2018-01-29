@@ -1,2 +1,36 @@
 @import "../variables";
 @import "../mixins";
+
+
+.checkbox__item label {
+  font-weight: bold;
+  padding-left: 80px;
+  text-transform: none;
+}
+
+@media (min-width: 768px) {
+  .checkbox__inputs {
+    display: flex;
+    padding-left: 95px;
+    padding-right: 95px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .checkbox__item {
+    margin-left: auto;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .checkbox__item label {
+    @include font-large;
+  }
+
+  .checkbox__legend {
+    width: 290px;
+  }
+}

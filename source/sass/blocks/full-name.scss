@@ -1,2 +1,17 @@
 @import "../variables";
 @import "../mixins";
+
+
+// .full-name {
+//   width: 280px;
+// }
+
+.full-name__label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.full-name__label input {
+  margin-left: 14px;
+}
