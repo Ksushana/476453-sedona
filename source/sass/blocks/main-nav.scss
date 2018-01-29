@@ -60,18 +60,18 @@
     border-bottom: none;
     border-top: none;
 
-      &--main {
-        margin-left: 50px;
-        margin-right: 77px;
-      }
+    &--main {
+      margin-left: 50px;
+      margin-right: 77px;
+    }
 
-      &--foto {
-        margin-right: 209px;
-      }
+    &--foto {
+      margin-right: 209px;
+    }
 
-      &--form {
-        margin-right: 50px;
-      }
+    &--form {
+      margin-right: 50px;
+    }
   }
 
   .main-nav__item a {
@@ -85,18 +85,17 @@
 
 @media (min-width: 1200px) {
   .main-nav__item {
+    &--main {
+      margin-left: 90px;
+      margin-right: 162px;
+    }
 
-      &--main {
-        margin-left: 90px;
-        margin-right: 162px;
-      }
+    &--foto {
+      margin-right: 382px;
+    }
 
-      &--foto {
-        margin-right: 382px;
-      }
-
-      &--form {
-        margin-right: 137px;
-      }
+    &--form {
+      margin-right: 137px;
+    }
   }
 }
