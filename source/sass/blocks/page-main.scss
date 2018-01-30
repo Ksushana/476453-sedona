@@ -32,6 +32,10 @@
   &--foto {
     @include font-large;
   }
+
+  &--form {
+    @include font-large;
+  }
 }
 
 .page-main__intro {
@@ -46,13 +50,15 @@
     padding-top: 25px;
     line-height: 24px;
   }
-}
 
-.page-main__intro--form {
-  padding-left: 15px;
-  padding-right: 15px;
+  &--form {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 25px;
+    // padding-bottom: 35px;
+    line-height: 24px;
+  }
 }
-
 
 .page-main__img-top {
   position: absolute;
@@ -96,16 +102,16 @@
       padding-top: 75px;
       padding-bottom: 5px;
     }
+
+    &--form {
+      padding-top: 77px;
+      padding-bottom: 5px;
+    }
   }
 
   .page-main__intro {
-    padding-left: 170px;
-    padding-right: 170px;
-
-    &--form {
-      padding-left: 150px;
-      padding-right: 150px;
-    }
+    padding-left: 165px;
+    padding-right: 165px;
   }
 }
 
@@ -115,6 +121,11 @@
 
     &--foto {
       padding-top: 112px;
+    }
+
+    &--form {
+      padding-top: 110px;
+      padding-bottom: 6px;
     }
   }
 

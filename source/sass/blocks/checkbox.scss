@@ -1,8 +1,14 @@
 @import "../variables";
 @import "../mixins";
 
+.checkbox__inputs {
+  @include flex-column;
+  min-height: 295px;
+  justify-content: space-between;
+}
 
 .checkbox__item label {
+  @include font-large;
   font-weight: bold;
   padding-left: 80px;
   text-transform: none;
@@ -10,19 +16,51 @@
 
 @media (min-width: 768px) {
   .checkbox__inputs {
-    display: flex;
+    min-height: 215px;
+    flex-direction: row;
     padding-left: 95px;
-    padding-right: 95px;
+    padding-right: 45px;
+    padding-top: 40px;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .checkbox__item {
+    min-width: 250px;
+
+    &:nth-child(2) {
+      order: 1;
+    }
+
+    &:nth-child(3) {
+      order: 0;
+    }
+
+    &:nth-child(4) {
+      order: 2;
+    }
   }
 }
 
 @media (min-width: 1200px) {
+  .checkbox__inputs {
+    min-height: 0;
+    flex-direction: row;
+    padding-left: 55px;
+    padding-right: 65px;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .checkbox__item {
     margin-left: auto;
+    min-width: 200px;
+    text-align: center;
 
     &:first-child {
       margin-left: 0;
+      margin-right: 10px;
     }
   }
 

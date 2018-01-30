@@ -2,7 +2,8 @@
 @import "../mixins";
 
 .contacts__label {
-  margin-bottom: 18px;
+  margin-bottom: 15px;
+  padding-left: 20px;
 }
 
 .contacts__label--shorten {
@@ -10,23 +11,35 @@
 }
 
 .contacts__label input {
-  margin-top: 11px;
-  margin-bottom: 18px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .contacts__wrapper {
+    padding-top: 23px;
+  }
+
+  .contacts__label input {
+    margin-bottom: 25px;
+  }
 }
 
 @media (min-width: 1200px) {
   .contacts__wrapper {
     display: flex;
+    justify-content: space-between;
+    padding: 67px 60px 35px 40px;
   }
 
   .contacts__label {
     flex-grow: 1;
     display: flex;
     white-space: nowrap;
-    align-items: center;
+    align-items: baseline;
 
     &:nth-child(2) {
-      margin-left: 40px;
+      margin-left: 60px;
     }
 
     &--shorten {
@@ -36,5 +49,7 @@
 
   .contacts__label input {
     margin-left: 16px;
+    margin-bottom: 0;
+    width: 315px;
   }
 }
