@@ -14,7 +14,48 @@
   position: absolute;
   height: 21px;
   width: 23px;
+  bottom: -38px;
+  right: 20px;
+  display: block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 4px;
+  background-color: $blue-menu-hover;
+  box-shadow: 0 8px 0 0 $blue-menu-hover, 0 16px 0 0 $blue-menu-hover;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 12px;
+  right: 35px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
 
 .main-nav__list {
   @include list-reset;
@@ -23,14 +64,33 @@
 
 .main-nav__item {
   @include flex-center;
+  // height: 55px;
+  // text-align: center;
+  // vertical-align: middle;
+  // border-bottom: 1px solid #678fa8;
+  // border-top: 1px solid #9ac2db;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+  }
+
+  &:active a{
+    color: $blue-active-font;
+  }
+}
+
+.main-nav__item a {
+  @include flex-center;
   height: 55px;
+  width: 100%;
   text-align: center;
   vertical-align: middle;
   border-bottom: 1px solid #678fa8;
   border-top: 1px solid #9ac2db;
-}
-
-.main-nav__item a {
   color: #ffffff;
 }
 
@@ -56,9 +116,9 @@
   }
 
   .main-nav__item {
-    height: 56px;
-    border-bottom: none;
-    border-top: none;
+    // // height: 56px;
+    // border-bottom: none;
+    // border-top: none;
 
     &--main {
       margin-left: 50px;
@@ -72,10 +132,33 @@
     &--form {
       margin-right: 50px;
     }
+
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:active {
+      background-color: #ffffff;
+    }
+
+    &:hover a{
+      color: $blue-menu-hover;
+    }
+
+    &:active a{
+      color: $grey-menu-active;
+    }
   }
 
   .main-nav__item a {
     color: #000000;
+    @include flex-center;
+    height: 56px;
+    // width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: none;
+    border-top: none;
   }
 
   .main-nav__link {

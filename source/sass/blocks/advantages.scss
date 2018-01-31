@@ -114,6 +114,11 @@
     padding-top: 20px;
   }
 
+  .advantages__item--small .advantages__header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .advantages__image {
     min-width: 512px;
     height: 256px;
@@ -131,8 +136,8 @@
   }
 
   .advantages__item--small .advantages__header {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   .advantages__head--wrapper {

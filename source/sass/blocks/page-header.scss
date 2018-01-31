@@ -10,6 +10,9 @@
   width: 102px;
   height: 83px;
   position: absolute;
+  z-index: 100;
+  bottom: -83px;
+  left: 109px;
 }
 
 .page-header__logo-image {
@@ -21,11 +24,17 @@
   .page-header {
     background-color: #ffffff;
   }
+
+  .page-header__logo {
+    top: 0;
+    left: 333px;
+  }
 }
 
 @media (min-width: 1200px) {
   .page-header__logo {
     width: 186px;
     height: 96px;
+    left: 507px;
   }
 }

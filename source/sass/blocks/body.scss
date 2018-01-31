@@ -110,6 +110,19 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   text-transform: uppercase;
   border: none;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+    color: $blue-active-font;
+  }
+
+  &--disabled {
+    background-color: $grey-disabled;
+  }
 }
 
 input[placeholder] {

@@ -7,6 +7,7 @@
 }
 
 .page-main__head-image {
+  position: relative;
   background-color: #dceaf3;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -22,6 +23,18 @@
     min-height: 160px;
     background-size: 100%;
     background-position: right;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 26.111px;
+    bottom: 0;
+    left: 0;
+    // background-color: red;
+    z-index: 100;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
   }
 }
 
