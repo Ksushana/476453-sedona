@@ -5,6 +5,7 @@
   @include flex-column;
   min-height: 295px;
   justify-content: space-between;
+  position: relative;
 }
 
 .checkbox__item label {
@@ -12,6 +13,24 @@
   font-weight: bold;
   padding-left: 80px;
   text-transform: none;
+  position: relative;
+}
+
+.checkbox__item label::before {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  background-color: $dark-grey;
+  width: 56px;
+  height: 56px;
+  top: -15px;
+  left: 0;
+}
+
+.checkbox__item input:checked + label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: 768px) {

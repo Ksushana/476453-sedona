@@ -12,8 +12,20 @@
   font-weight: 26px;
   margin: 0 30px;
   padding-bottom: 25px;
+  position: relative;
 
   @include flex-column;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 37px;
+    bottom: -15px;
+    left: -30px;
+    z-index: 10;
+    background-image: url("../img/bg-triangle.svg");
+  }
 }
 
 .reasons__slogan {
@@ -32,8 +44,12 @@
 
 @media (min-width: 768px) {
   .reasons__header {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .reasons__slogan {

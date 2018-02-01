@@ -8,33 +8,36 @@
 
 .page-main__head-image {
   position: relative;
+  width: 100%;
   background-color: #dceaf3;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  position: relative;
 
   &--long {
     min-height: 390px;
+    background-image: url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: 90%, cover;
   }
 
   &--short {
     min-height: 160px;
-    background-size: 100%;
-    background-position: right;
+    background-image: url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: 90%, cover;
   }
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
-    width: 320px;
+    width: 330px;
     height: 26.111px;
     bottom: 0;
-    left: 0;
-    // background-color: red;
+    left: -5px;
     z-index: 100;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -99,13 +102,41 @@
 
   .page-main__head-image {
     &--long {
-      min-height: 518px;
-      background-size: 100%;
+      min-height: 550px;
+      background-size: 60%, cover;
     }
 
     &--short {
       min-height: 290px;
+      // background-repeat: no-repeat, no-repeat;
+      background-position: center, center;
+      background-size: 60%, cover;
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 62px;
+      bottom: 0;
+      left: 0;
+      z-index: 100;
+      background: url("../img/bg-intro-triangle-mobile.svg") center no-repeat;
+      background-size: 100% 68px;
+    }
+
+    // // &:after {
+    // //   content: "";
+    // //   position: absolute;
+    // //   width: 700px;
+    // //   height: 50px;
+    // //   bottom: 10px;
+    // //   left: 40px;
+    // //   z-index: 100;
+    // //   background-image: url("../img/bg-intro-triangle-mobile.svg");
+    // //   background-repeat: no-repeat;
+    // //   // background-size: cover;
+    // }
   }
 
   .page-main__header {
@@ -147,7 +178,27 @@
     padding-right: 380px;
   }
 
-  .page-main__head-image--short {
-    height: 302px;
+  .page-main__head-image {
+    &--long {
+      min-height: 550px;
+      background-position: center, center;
+      background-size: 45%, 100%;
+    }
+
+    &--short {
+      min-height: 302px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 62px;
+      bottom: 0;
+      left: 0;
+      z-index: 100;
+      background: url("../img/bg-intro-triangle-mobile.svg") center no-repeat;
+      background-size: 100% 68px;
+    }
   }
 }

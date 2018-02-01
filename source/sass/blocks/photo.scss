@@ -3,6 +3,17 @@
 
 .photo {
   line-height: 24px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 115%;
+    border-bottom: 1px solid $grey-disabled;
+    bottom: -20px;
+    left: -20px;
+  }
 }
 
 .photo__header,
@@ -37,6 +48,16 @@
 }
 
 @media (min-width: 768px) {
+  .photo {
+    &::after {
+      display: none;
+    }
+  }
+
+  .photo__image {
+    overflow: hidden;
+  }
+
   .photo__image img {
     min-width: 324px;
     height: 267px;
@@ -52,9 +73,15 @@
   }
 
   .photo__info {
+    display: flex;
     background-color: $dark-grey;
     height: 80px;
     padding-left: 20px;
+  }
+
+  .photo__popularity {
+    width: 85px;
+    margin: auto 0 auto auto;
   }
 }
 
@@ -70,8 +97,13 @@
   }
 
   .photo__info {
+    color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);
     height: 80px;
     margin-top: -80px;
+  }
+
+  .photo__author {
+    color: #ffffff;
   }
 }

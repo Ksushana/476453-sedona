@@ -9,9 +9,9 @@
   justify-content: space-between;
 }
 
-
 .radio__item {
   text-transform: none;
+  position: relative;
 }
 
 .radio__item label {
@@ -19,6 +19,30 @@
   padding-left: 80px;
 
   @include font-large;
+  position: relative;
+  display: block;
+}
+
+.radio__item input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: $dark-grey;
+  top: -15px;
+  left: 0;
+}
+
+.radio__item input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #333333;
+  top: 2px;
+  left: 17px;
 }
 
 @media (min-width: 768px) {

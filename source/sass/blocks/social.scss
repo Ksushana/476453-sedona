@@ -19,3 +19,15 @@
     margin-right: 0;
   }
 }
+
+.social__link {
+  font-size: 0;
+  position: relative;
+  width: 46px;
+  height: 48px;
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
+}
