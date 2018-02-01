@@ -3,21 +3,38 @@
 
 .form {
   @include flex-column;
+  // padding-top: 5px;s
 }
 
-.form fieldset {
+.form__fieldset {
   border: none;
   margin: 0;
   padding: 20px;
-  // width: 100%;
+  width: 100%;
+
+  &--contacts {
+    padding-bottom: 0;
+  }
+
+  &--checkbox {
+    padding-top: 15px;
+  }
 }
 
 .form__legend {
   text-align: center;
   font-weight: bold;
+  padding-top: 5px;
 
   @include font-large;
-  @include zero;
+
+  &--checkbox {
+    padding-top: 30px;
+  }
+
+  &--text {
+    padding-top: 25px;
+  }
 }
 
 .form__textarea {
@@ -41,43 +58,133 @@
   display: none;
 }
 
+.form__button {
+  width: 280px;
+  margin: 20px auto 40px;
+  font-weight: bold;
+}
+
 
 @media (min-width: 768px) {
   .form {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 25px;
   }
 
-  .form__full-name {
-    width: 50%;
+  .form__fieldset {
+
+    padding: 0;
+
+    &--full-name {
+      width: 267px;
+      margin-left: auto;
+    }
+
+    &--radio {
+      order: -1;
+      width: 50%;
+    }
+
+    &--contacts {
+      width: 100%;
+    }
+
+    &--checkbox {
+      width: 100%;
+    }
+
+    &--text {
+      width: 100%;
+    }
   }
 
-  .form__radio {
-    order: -1;
-    width: 50%;
-  }
+  .form__legend {
+    @include font-huge;
+    text-align: left;
 
-  .form__contacts {
-    width: 100%;
-  }
+    &--contacts {
+      padding-top: 50px;
+      text-align: center;
+    }
 
-  .form__checkbox {
-    width: 100%;
-  }
+    &--checkbox {
+      padding-top: 5px;
+      padding-left: 120px;
+      padding-right: 120px;
+      text-align: center;
+    }
 
-  .form__text {
-    width: 100%;
+    &--text {
+      text-align: center;
+      padding-top: 35px;
+      padding-bottom: 55px;
+    }
   }
 
   .form__button {
+    width: 323px;
     margin-right: auto;
-    margin-left: 20px;
-    margin-top: 38px;
+    margin-left: 0;
+    margin-top: 53px;
   }
 
   .form__note {
     display: block;
-    margin-right: 20px;
-    margin-top: 58px;
+    margin-right: 0;
+    margin-top: 75px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .form__fieldset {
+    &--full-name {
+      width: 400px;
+      margin-left: auto;
+      margin-right: 60px;
+    }
+
+    &--radio {
+      width: 412px;
+      padding-left: 75px;
+    }
+
+    &--text {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+
+  .form__legend {
+    &--radio {
+      text-align: right;
+    }
+
+    &--contacts {
+      padding-top: 48px;
+    }
+
+    &--checkbox {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &--text {
+      padding-top: 70px;
+    }
+  }
+
+  .form__button {
+    width: 480px;
+    margin-right: auto;
+    margin-left: 60px;
+    margin-top: 50px;
+  }
+
+  .form__note {
+    display: block;
+    margin-right: 60px;
+    margin-top: 70px;
   }
 }

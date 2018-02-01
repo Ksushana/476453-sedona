@@ -8,5 +8,11 @@
 
 .copyright__text {
   @include zero;
-  padding-right: 50px;
+  padding-right: 43px;
+}
+
+@media (min-width: 1200px) {
+  .copyright__text {
+    padding-left: 103px;
+  }
 }

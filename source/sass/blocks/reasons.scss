@@ -11,9 +11,21 @@
   padding-top: 44px;
   font-weight: 26px;
   margin: 0 30px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
+  position: relative;
 
   @include flex-column;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 37px;
+    bottom: -15px;
+    left: -30px;
+    z-index: 10;
+    background-image: url("../img/bg-triangle.svg");
+  }
 }
 
 .reasons__slogan {
@@ -26,18 +38,27 @@
 
   @include zero;
   @include font-small;
-  margin-top: 35px;
+  margin-top: 25px;
   color: #333333;
 }
 
 @media (min-width: 768px) {
   .reasons__header {
-    padding-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .reasons__slogan {
     font-size: 21px;
     margin: 0 130px;
+  }
+
+  .reasons__intro {
+    margin-top: 30px;
   }
 }
 
@@ -45,9 +66,5 @@
   .reasons__slogan {
     margin-right: 350px;
     margin-left: 350px;
-  }
-
-  .reasons__intro {
-    font-size: 21px;
   }
 }

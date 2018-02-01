@@ -7,21 +7,66 @@
   @include zero;
   @include black-font;
   text-align: left;
+  padding-top: 10px;
   padding-left: 70px;
   padding-right: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 37px;
+}
+
+.features__item {
+  position: relative;
+
+  &--motel {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 38px;
+      height: 38px;
+      background-image: url("../img/icon-house.svg");
+      background-size: cover;
+      top: 18px;
+      left: -50px;
+    }
+  }
+
+  &--souvenir {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 33px;
+      height: 39px;
+      background-image: url("../img/icon-gift.svg");
+      background-size: cover;
+      top: 15px;
+      left: -45px;
+    }
+  }
+
+  &--food {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 38px;
+      background-image: url("../img/icon-burger.svg");
+      background-size: cover;
+      top: 21px;
+      left: -53px;
+    }
+  }
 }
 
 .features__header {
   @include font-large;
   @include zero;
   text-transform: uppercase;
-  padding-top: 35px;
+  padding-top: 27px;
 }
+
 
 .features-note {
   @include zero;
-  padding-top: 19px;
+  padding-top: 15px;
   color: #333333;
 }
 
@@ -31,11 +76,10 @@
     display: flex;
     text-align: center;
     padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 60px;
   }
 
-  .features__header {
-    padding-top: 160px;
-  }
 
   .features__item {
     padding-left: 35px;
@@ -43,6 +87,65 @@
 
     &:nth-child(2) {
       order: 3;
+    }
+
+    &--food {
+      padding-left: 20px;
+      padding-right: 50px;
+    }
+
+    &--souvenir {
+      padding-left: 10px;
+      padding-right: 55px;
+    }
+  }
+
+  .features__header {
+    padding-top: 150px;
+
+    @include font-huge;
+  }
+
+  .features-note {
+    padding-top: 20px;
+    padding-left: 12px;
+    padding-right: 18px;
+
+    &--food {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    &--souvenir {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .features {
+    padding-bottom: 80px;
+  }
+
+  .features__item {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .features-note {
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+
+    &--food {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    &--souvenir {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }

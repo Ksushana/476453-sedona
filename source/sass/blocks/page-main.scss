@@ -7,27 +7,51 @@
 }
 
 .page-main__head-image {
-  background-color: #dceaf3;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
   position: relative;
+  width: 100%;
+  background-color: #dceaf3;
 
   &--long {
     min-height: 390px;
+    background-image: url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: 90%, cover;
   }
 
   &--short {
     min-height: 160px;
+    background-image: url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: 90%, cover;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 26.111px;
+    bottom: 0;
+    left: -5px;
+    z-index: 100;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-size: 100%;
-    background-position: right;
+    background-repeat: no-repeat;
   }
 }
 
 .page-main__header {
   @include zero;
   padding-top: 40px;
+
+  &--foto {
+    @include font-large;
+  }
+
+  &--form {
+    @include font-large;
+  }
 }
 
 .page-main__intro {
@@ -35,18 +59,22 @@
   padding-top: 30px;
   padding-bottom: 30px;
   color: #333333;
-}
 
-.page-main__intro--photo {
-  padding-left: 25px;
-  padding-right: 25px;
-}
+  &--photo {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    line-height: 24px;
+  }
 
-.page-main__intro--form {
-  padding-left: 15px;
-  padding-right: 15px;
+  &--form {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 25px;
+    // padding-bottom: 35px;
+    line-height: 24px;
+  }
 }
-
 
 .page-main__img-top {
   position: absolute;
@@ -74,37 +102,103 @@
 
   .page-main__head-image {
     &--long {
-      min-height: 518px;
-      background-size: 100%;
+      min-height: 550px;
+      background-size: 60%, cover;
     }
 
     &--short {
       min-height: 290px;
+      // background-repeat: no-repeat, no-repeat;
+      background-position: center, center;
+      background-size: 60%, cover;
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 62px;
+      bottom: 0;
+      left: 0;
+      z-index: 100;
+      background: url("../img/bg-intro-triangle-mobile.svg") center no-repeat;
+      background-size: 100% 68px;
+    }
+
+    // // &:after {
+    // //   content: "";
+    // //   position: absolute;
+    // //   width: 700px;
+    // //   height: 50px;
+    // //   bottom: 10px;
+    // //   left: 40px;
+    // //   z-index: 100;
+    // //   background-image: url("../img/bg-intro-triangle-mobile.svg");
+    // //   background-repeat: no-repeat;
+    // //   // background-size: cover;
+    // }
   }
 
   .page-main__header {
     font-size: 30px;
+
+    &--foto {
+      padding-top: 75px;
+      padding-bottom: 5px;
+    }
+
+    &--form {
+      padding-top: 77px;
+      padding-bottom: 5px;
+    }
   }
 
   .page-main__intro {
-    padding-left: 170px;
-    padding-right: 170px;
-
-    &--form {
-      padding-left: 150px;
-      padding-right: 150px;
-    }
+    padding-left: 165px;
+    padding-right: 165px;
   }
 }
 
 @media (min-width: 1200px) {
   .page-main__header {
     font-size: 30px;
+
+    &--foto {
+      padding-top: 112px;
+    }
+
+    &--form {
+      padding-top: 110px;
+      padding-bottom: 6px;
+    }
   }
 
   .page-main__intro {
     padding-left: 380px;
     padding-right: 380px;
+  }
+
+  .page-main__head-image {
+    &--long {
+      min-height: 550px;
+      background-position: center, center;
+      background-size: 45%, 100%;
+    }
+
+    &--short {
+      min-height: 302px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 62px;
+      bottom: 0;
+      left: 0;
+      z-index: 100;
+      background: url("../img/bg-intro-triangle-mobile.svg") center no-repeat;
+      background-size: 100% 68px;
+    }
   }
 }

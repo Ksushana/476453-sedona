@@ -1,22 +1,65 @@
 @import "../variables";
 @import "../mixins";
 
+
+.radio__inputs {
+  @include flex-column;
+  min-height: 195px;
+  padding-top: 5px;
+  justify-content: space-between;
+}
+
 .radio__item {
   text-transform: none;
+  position: relative;
 }
 
 .radio__item label {
   font-weight: bold;
   padding-left: 80px;
+
+  @include font-large;
+  position: relative;
+  display: block;
+}
+
+.radio__item input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: $dark-grey;
+  top: -15px;
+  left: 0;
+}
+
+.radio__item input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #333333;
+  top: 2px;
+  left: 17px;
 }
 
 @media (min-width: 768px) {
   .radio__item label {
-    @include font-large;
+    padding-left: 75px;
   }
 
   .radio__inputs {
-    @include flex-column;
+    padding-top: 50px;
     margin-top: auto;
+    min-height: 280px;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1200px) {
+  .radio__item label {
+    padding-left: 65px;
   }
 }

@@ -2,10 +2,6 @@
 @import "../mixins";
 
 
-// .full-name {
-//   width: 280px;
-// }
-
 .full-name__label {
   display: flex;
   align-items: center;
@@ -14,4 +10,16 @@
 
 .full-name__label input {
   margin-left: 14px;
+}
+
+@media (min-width: 768px) {
+  .full-name__legend {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .full-name__legend {
+    margin-bottom: 58px;
+  }
 }
