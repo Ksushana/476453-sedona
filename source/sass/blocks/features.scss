@@ -89,14 +89,38 @@
       order: 3;
     }
 
+    &--motel {
+      &::before {
+        width: 75px;
+        height: 72px;
+        top: 50px;
+        left: 90px;
+      }
+    }
+
     &--food {
       padding-left: 20px;
       padding-right: 50px;
+
+      &::before {
+        width: 77px;
+        height: 68px;
+        top: 52px;
+        left: 80px;
+      }
     }
 
     &--souvenir {
       padding-left: 20px;
       padding-right: 45px;
+
+
+      &::before {
+        width: 64px;
+        height: 75px;
+        top: 47px;
+        left: 67px;
+      }
     }
   }
 
@@ -131,6 +155,27 @@
   .features__item {
     padding-left: 45px;
     padding-right: 45px;
+
+    &--motel {
+      &::before {
+        top: 48px;
+        left: 160px;
+      }
+    }
+
+    &--food {
+      &::before {
+        top: 51px;
+        left: 165px;
+      }
+    }
+
+    &--souvenir {
+      &::before {
+        top: 45px;
+        left: 130px;
+      }
+    }
   }
 
   .features-note {
