@@ -56,20 +56,14 @@
 
   .photo__image {
     overflow: hidden;
-  }
-
-  .photo__image img {
     min-width: 324px;
     height: 267px;
-  }
 
-  .photo__image--big {
-    padding-top: 38px;
-  }
-
-  .photo__image--big img {
-    min-width: 648px;
-    height: 400px;
+    &--big {
+      padding-top: 38px;
+      min-width: 648px;
+      height: 438px;
+    }
   }
 
   .photo__info {
@@ -86,14 +80,15 @@
 }
 
 @media (min-width: 1200px) {
-  .photo__image img {
+  .photo__image {
     min-width: 400px;
     height: 267px;
-  }
 
-  .photo__image--big img {
-    min-width: 1200px;
-    height: 400px;
+    &--big {
+      min-width: 1200px;
+      height: 440px;
+      padding-top: 42px;
+    }
   }
 
   .photo__info {
