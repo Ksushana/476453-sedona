@@ -79,6 +79,18 @@
   }
 }
 
+.video-presentation__icon {
+  fill: $vide0-bitton;
+}
+
+.video-presentation__button:hover .video-presentation__icon {
+  fill: #333333;
+}
+
+.video-presentation__button:active .video-presentation__icon {
+  fill: $video-active;
+}
+
 
 @media (min-width: 768px) {
   .video-presentation {
@@ -143,6 +155,19 @@
       margin-left: 17px;
     }
   }
+
+  .video-presentation__icon {
+    fill: #ffffff;
+  }
+
+  .video-presentation__button:hover .video-presentation__icon {
+    fill: #333333;
+  }
+
+  .video-presentation__button:active .video-presentation__icon {
+    fill: $video-active;
+  }
+
 }
 
 @media (min-width: 1200px) {

@@ -19,7 +19,7 @@
   }
 
   &--small {
-    padding-top: 27px;
+    padding-top: 28px;
     background-color: $grey;
     padding-left: 35px;
     padding-right: 35px;
@@ -39,6 +39,7 @@
 
 .advantages__item:nth-child(n+4) {
   position: relative;
+  padding-top: 27px;
 
   &::before {
     content: "";
@@ -73,7 +74,7 @@
 }
 
 .advantages__item--small .advantages__description {
-  padding-bottom: 30px;
+  padding-bottom: 29px;
 }
 
 
