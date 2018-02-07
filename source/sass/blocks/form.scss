@@ -134,7 +134,7 @@ textarea::-webkit-input-placeholder {
     text-align: left;
 
     &--contacts {
-      padding-top: 50px;
+      padding-top: 48px;
       text-align: center;
     }
 
@@ -147,9 +147,13 @@ textarea::-webkit-input-placeholder {
 
     &--text {
       text-align: center;
-      padding-top: 35px;
+      padding-top: 40px;
       padding-bottom: 55px;
     }
+  }
+
+  .form__textarea {
+    height: 160px;
   }
 
   .form__button {

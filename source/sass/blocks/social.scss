@@ -55,3 +55,15 @@
     margin-top: 16px;
   }
 }
+
+@media (min-width: 768px) {
+  .social__list {
+    margin-left: 115px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social__list {
+    margin-left: 255px;
+  }
+}

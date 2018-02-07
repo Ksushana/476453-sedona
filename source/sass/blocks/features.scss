@@ -70,6 +70,10 @@
   color: #333333;
 }
 
+.features-note--souvenir br {
+  display: none;
+}
+
 
 @media (min-width: 768px) {
   .features {
@@ -87,6 +91,8 @@
 
     &:nth-child(2) {
       order: 3;
+      padding-left: 35px;
+      padding-right: 35px;
     }
 
     &--motel {
@@ -149,31 +155,34 @@
 
 @media (min-width: 1200px) {
   .features {
-    padding-bottom: 80px;
+    padding-bottom: 83px;
   }
 
   .features__item {
-    padding-left: 45px;
-    padding-right: 45px;
+    width: 400px;
 
     &--motel {
+      padding-left: 60px;
+      padding-right: 60px;
       &::before {
-        top: 48px;
+        top: 50px;
         left: 160px;
       }
     }
 
     &--food {
+      padding-left: 30px;
+      padding-right: 30px;
       &::before {
-        top: 51px;
-        left: 165px;
+        top: 55px;
+        left: 160px;
       }
     }
 
     &--souvenir {
       &::before {
-        top: 45px;
-        left: 130px;
+        top: 50px;
+        left: 170px;
       }
     }
   }
@@ -192,5 +201,9 @@
       padding-left: 0;
       padding-right: 0;
     }
+  }
+
+  .features-note--souvenir br {
+    display: inline;
   }
 }
