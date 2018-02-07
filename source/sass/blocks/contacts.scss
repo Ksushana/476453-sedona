@@ -10,10 +10,32 @@
   display: inline;
 }
 
-.contacts__label input {
+.contacts__form-wrapper {
   margin-top: 5px;
   margin-bottom: 15px;
 }
+
+.contacts__form-wrapper {
+  display: flex;
+}
+
+.contacts__form-icon {
+  width: 70px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--tel {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--email {
+    background-image: url("../img/icon-mail.svg");
+  }
+}
+
+
 
 @media (min-width: 768px) {
   .contacts__wrapper {
