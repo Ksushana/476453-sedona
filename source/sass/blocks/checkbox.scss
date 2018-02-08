@@ -19,12 +19,12 @@
 .checkbox__item label::before {
   content: "";
   position: absolute;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: $dark-grey;
   width: 56px;
   height: 56px;
-  top: -15px;
-  left: 0;
+  top: -18px;
+  left: -1px;;
 }
 
 .checkbox__item input:checked + label::before {
