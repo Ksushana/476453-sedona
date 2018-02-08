@@ -34,15 +34,17 @@
 
 @media (min-width: 768px) {
   .contacts__wrapper {
-    padding-top: 23px;
+    padding-top: 25px;
+}
+
+  .contacts__label-wrapper {
+    &--email {
+      margin-top: 25px;
+    }
   }
 
-  .form__tel {
-    margin-bottom: 10px;
-  }
-
-  .form__email {
-    margin-bottom: 35px;
+  .contacts__form-icon {
+    width: 65px;
   }
 }
 
@@ -74,13 +76,36 @@
     margin-left: 16px;
     margin-bottom: 0;
     width: 257px;
+    height: 58px;
+  }
+
+  .form__email {
+    margin-left: 14px;
   }
 
   .contacts__label-wrapper {
     display: flex;
+
+    &--email {
+      margin-top: 0;
+    }
   }
 
   .contacts__form-wrapper {
     width: 330px;
   }
+
+  .contacts__form-icon {
+    width: 75px;
+  }
+
+  .contacts__label {
+    padding-top: 23px;
+
+    &--email {
+      margin-right: 3px;
+    }
+  }
+
+
 }

@@ -74,17 +74,22 @@
   .photo__info {
     display: flex;
     background-color: $dark-grey;
-    height: 80px;
+    min-height: 80px;
     padding-left: 20px;
   }
 
   .photo__popularity {
     width: 85px;
     margin: auto 0 auto auto;
+    padding-top: 0;
   }
 
   .photo__likes {
     background-color: $dark-grey;
+  }
+
+  .photo__likes-ammount {
+    padding-left: 10px;
   }
 }
 

@@ -46,12 +46,26 @@
 }
 
 @media (min-width: 768px) {
+  .radio {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 292px;
+      width: 1px;
+      border-left: 1px solid $grey-line;
+      right: 0;
+      top: 8px;
+    }
+
+  }
   .radio__item label {
     padding-left: 75px;
   }
 
   .radio__inputs {
-    padding-top: 50px;
+    padding-top: 47px;
     margin-top: auto;
     min-height: 280px;
     justify-content: space-around;
@@ -59,6 +73,14 @@
 }
 
 @media (min-width: 1200px) {
+  .radio {
+
+    &::before {
+      right: -130px;
+      top: 8px;
+    }
+  }
+
   .radio__item label {
     padding-left: 65px;
   }

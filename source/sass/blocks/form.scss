@@ -132,6 +132,7 @@ textarea::-webkit-input-placeholder {
 
     &--checkbox {
       width: 100%;
+      margin-top: 35px;
     }
 
     &--text {
@@ -171,6 +172,7 @@ textarea::-webkit-input-placeholder {
     margin-right: auto;
     margin-left: 0;
     margin-top: 53px;
+    font-weight: bold;
   }
 
   .form__note {
@@ -178,10 +180,62 @@ textarea::-webkit-input-placeholder {
     margin-right: 0;
     margin-top: 75px;
   }
+
+  .form__legend--contacts,
+  .form__legend--checkbox,
+  .form__legend--text {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 126px;
+      position: absolute;
+      height: 1px;
+      border-bottom: 1px solid $grey-line;
+      left: -182px;
+      bottom: 15px;
+    }
+
+    &::after {
+      content: "";
+      width: 126px;
+      position: absolute;
+      height: 1px;
+      border-bottom: 1px solid $grey-line;
+      right: -182px;
+      bottom: 15px;
+    }
+  }
+
+  .form__legend--checkbox {
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  .form__legend--text {
+    &::before {
+      left: -196px;
+      top: 50px;
+    }
+
+    &::after {
+      right: -196px;
+      top: 50px;
+    }
+  }
 }
 
 
 @media (min-width: 1200px) {
+  .form {
+    margin-bottom: 5px;
+  }
+
   .form__fieldset {
     &--full-name {
       width: 400px;
@@ -197,6 +251,11 @@ textarea::-webkit-input-placeholder {
     &--text {
       padding-left: 60px;
       padding-right: 60px;
+      margin-top: 13px;
+    }
+
+    &--checkbox {
+      margin-top: 0;
     }
   }
 
@@ -216,7 +275,13 @@ textarea::-webkit-input-placeholder {
 
     &--text {
       padding-top: 70px;
+      padding-bottom: 60px;
     }
+  }
+
+  .form__textarea {
+    padding-top: 18px;
+    margin-bottom: 2px;
   }
 
   .form__button {
@@ -230,5 +295,46 @@ textarea::-webkit-input-placeholder {
     display: block;
     margin-right: 60px;
     margin-top: 70px;
+  }
+
+  .form__legend--contacts,
+  .form__legend--checkbox,
+  .form__legend--text {
+
+    &::before {
+      width: 280px;
+      left: -337px;
+      bottom: 15px;
+    }
+
+    &::after {
+      width: 280px;
+      right: -337px;
+      bottom: 15px;
+    }
+  }
+
+  .form__legend--checkbox {
+    &::before {
+      left: -100;
+      top: 30px;
+    }
+
+    &::after {
+      right: -100;
+      top: 30px;
+    }
+  }
+
+  .form__legend--text {
+    &::before {
+      left: -356px;
+      top: 80px;
+    }
+
+    &::after {
+      right: -356px;
+      top: 80px;
+    }
   }
 }

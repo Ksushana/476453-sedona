@@ -164,7 +164,7 @@
     font-size: 30px;
 
     &--foto {
-      padding-top: 75px;
+      padding-top: 77px;
       padding-bottom: 5px;
     }
 
@@ -189,14 +189,19 @@
     }
 
     &--form {
-      padding-top: 110px;
-      padding-bottom: 6px;
+      padding-top: 111px;
+      padding-bottom: 4px;
     }
   }
 
   .page-main__intro {
     padding-left: 380px;
     padding-right: 380px;
+
+    &--form {
+      padding-top: 27px;
+      padding-bottom: 28px;
+    }
   }
 
   .page-main__head-image {

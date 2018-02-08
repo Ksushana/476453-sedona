@@ -39,13 +39,14 @@
     flex-direction: row;
     padding-left: 95px;
     padding-right: 45px;
-    padding-top: 40px;
+    padding-top: 43px;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .checkbox__item {
-    min-width: 250px;
+    min-width: 248px;
+    margin-bottom: 0;
 
     &:nth-child(2) {
       order: 1;
@@ -67,7 +68,7 @@
     flex-direction: row;
     padding-left: 55px;
     padding-right: 65px;
-    padding-top: 40px;
+    padding-top: 41px;
     flex-wrap: wrap;
     justify-content: space-between;
   }
