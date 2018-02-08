@@ -18,6 +18,19 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &:hover {
+    background-color: $blue-social-hover;
+  }
+
+  &:active {
+    background-color: $blue-social-active;
+  }
+}
+
+
+.social__item:active .social__icon {
+  fill: $blue-social-icon;
 }
 
 .social__link {
@@ -25,9 +38,32 @@
   position: relative;
   width: 46px;
   height: 48px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
+.social__icon {
+  fill: #ffffff;
+
+  &--twitter {
+    margin-top: 17px;
+  }
+
+  &--facebook {
+    margin-top: 14px;
+  }
+
+  &--youtube {
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .social__list {
+    margin-left: 115px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social__list {
+    margin-left: 255px;
   }
 }

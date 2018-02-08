@@ -62,4 +62,12 @@
   .radio__item label {
     padding-left: 65px;
   }
+
+  .radio__item input[type="radio"] + label::before {
+    left: -10px;
+  }
+
+  .radio__item input[type="radio"]:checked + label::after {
+    left: 8px;
+  }
 }

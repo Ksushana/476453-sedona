@@ -52,6 +52,15 @@ span {
   display: block;
 }
 
+input[placeholder],
+textarea[placeholder] {
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
 .container {
   margin: 0 auto;
   width: 320px;

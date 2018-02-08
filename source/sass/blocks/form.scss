@@ -3,7 +3,7 @@
 
 .form {
   @include flex-column;
-  // padding-top: 5px;s
+  padding-top: 2px;
 }
 
 .form__fieldset {
@@ -13,7 +13,7 @@
   width: 100%;
 
   &--contacts {
-    padding-bottom: 0;
+    padding-bottom: 30px;
   }
 
   &--checkbox {
@@ -24,7 +24,7 @@
 .form__legend {
   text-align: center;
   font-weight: bold;
-  padding-top: 5px;
+  padding-top: 3px;
 
   @include font-large;
 
@@ -39,6 +39,10 @@
 
 .form__textarea {
   width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  background-color: $dark-grey;
+  border: none;
 }
 
 .form__label {
@@ -46,12 +50,45 @@
   color: #333333;
 }
 
-.form__label input {
+.form__input {
   background-color: $dark-grey;
   border: none;
   flex-grow: 1;
   min-height: 58px;
   width: 100%;
+  color: #000000;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input::-moz-placeholder {
+  color: #000000;
+}
+
+input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+textarea::-moz-placeholder {
+  color: #000000;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #000000;
 }
 
 .form__note {
@@ -104,7 +141,7 @@
     text-align: left;
 
     &--contacts {
-      padding-top: 50px;
+      padding-top: 48px;
       text-align: center;
     }
 
@@ -117,9 +154,13 @@
 
     &--text {
       text-align: center;
-      padding-top: 35px;
+      padding-top: 40px;
       padding-bottom: 55px;
     }
+  }
+
+  .form__textarea {
+    height: 160px;
   }
 
   .form__button {
