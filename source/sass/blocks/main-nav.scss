@@ -34,7 +34,9 @@
   box-shadow: 0 8px 0 0 $blue-menu-hover, 0 16px 0 0 $blue-menu-hover;
 }
 
-.main-nav--opened .main-nav__toggle {
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
   top: 12px;
   right: 27px;
   background-image: url("../img/icon-cross.svg");
@@ -75,15 +77,11 @@
   border-bottom: 1px solid #678fa8;
   border-top: 1px solid #9ac2db;
   color: #ffffff;
-}
-
-.main-nav__link {
-  color: #ffffff;
   text-decoration: none;
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav__link--gradient{
+  .main-nav__link--gradient {
     border-bottom: none;
     position: relative;
 
@@ -93,7 +91,7 @@
       width: 320px;
       height: 7px;
       background-color: transparent;
-      background-image:  linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.2));
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
       bottom: 0;
       left: 0;
       z-index: 2;
@@ -113,14 +111,13 @@
   }
 
   .main-nav--nojs .main-nav__wrapper {
-      position: static;
-      min-height: 0;
-    }
+    position: static;
+    min-height: 0;
+  }
 
   .main-nav--nojs .main-nav__item {
     display: block;
   }
-
 }
 
 @media (min-width: 768px) {

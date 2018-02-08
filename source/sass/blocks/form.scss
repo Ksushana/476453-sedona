@@ -24,7 +24,7 @@
 .form__legend {
   text-align: center;
   font-weight: bold;
-  padding-top:3px;
+  padding-top: 3px;
 
   @include font-large;
 
@@ -62,24 +62,31 @@
 input:focus::-moz-placeholder {
   color: transparent;
 }
+
 input:focus::-webkit-input-placeholder {
   color: transparent;
 }
+
 input::-moz-placeholder {
   color: #000000;
 }
+
 input::-webkit-input-placeholder {
   color: #000000;
 }
+
 textarea:focus::-moz-placeholder {
   color: transparent;
 }
+
 textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
+
 textarea::-moz-placeholder {
   color: #000000;
 }
+
 textarea::-webkit-input-placeholder {
   color: #000000;
 }

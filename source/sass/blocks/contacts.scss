@@ -32,8 +32,6 @@
   }
 }
 
-
-
 @media (min-width: 768px) {
   .contacts__wrapper {
     padding-top: 23px;
@@ -71,8 +69,8 @@
     }
   }
 
-    .form__tel,
-    .form__email {
+  .form__tel,
+  .form__email {
     margin-left: 16px;
     margin-bottom: 0;
     width: 257px;
@@ -85,5 +83,4 @@
   .contacts__form-wrapper {
     width: 330px;
   }
-
 }

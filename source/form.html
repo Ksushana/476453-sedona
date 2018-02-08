@@ -168,7 +168,7 @@
       <p class="pop-up__note">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       <div class="pop-up__button--wrapper"><button type="button" class="pop-up__button button">Закрыть окно</button></div>
     </article>
-   </div>
+  </div>
     <svg style="display:none">
       <symbol viewBox="0 0 17.5 14.663" id="icon-twitter">
         <g id="W6EeEF_1_">
@@ -201,6 +201,26 @@
       navMain.classList.add('main-nav--closed');
       navMain.classList.remove('main-nav--opened');
     }
+  });
+
+  // var feedbackForm = document.querySelector('.feedback__form');
+  // feedbackForm.addEventListener('submit', function(event) {
+  //   event.preventDefault();
+  // var telInput = document.querySelector('.form__tel');
+  // var popupError = document.querySelector('.pop-up--error');
+  // var popupSuccess = document.querySelector('.pop-up--success');
+  // var emailInput = document.querySelector('.form__email');
+  //
+  // var telIsValid = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test(telInput.value);
+  // var emailIsValid = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(emailInput.value);
+
+    // if (telIsValid && emailIsValid) {
+    //   popupSuccess.style.visibility="visible";
+    //   popupError.style.visibility="hidden";
+    // } else {
+    //   popupError.style.visibility="visible";
+    //   popupSuccess.style.visibility="hidden";
+    // }
   });
 </script>
   </body>

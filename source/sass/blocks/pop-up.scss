@@ -3,9 +3,10 @@
 
 
 .pop-up {
-  height: 280px;
+  min-height: 280px;
   width: 320px;
   text-align: center;
+  visibility: hidden;
 
   @include flex-column;
 }

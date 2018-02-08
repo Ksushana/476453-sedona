@@ -44,12 +44,12 @@
   width: 22px;
   height: 20px;
   border: none;
+
   @include zero;
 }
 
 .photo__like {
   fill: $logo-active;
-
 }
 
 @media (min-width: 768px) {
@@ -84,7 +84,7 @@
   }
 
   .photo__likes {
-  background-color: $dark-grey;
+    background-color: $dark-grey;
   }
 }
 
@@ -102,7 +102,7 @@
 
   .photo__info {
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: red;
     height: 80px;
     margin-top: -80px;
   }
@@ -112,7 +112,7 @@
   }
 
   .photo__likes {
-  background-color: transparent;
+    background-color: transparent;
   }
 
   .photo__like {
