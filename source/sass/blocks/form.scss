@@ -66,11 +66,19 @@ input:focus::-moz-placeholder {
   color: transparent;
 }
 
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
 input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
 input::-moz-placeholder {
+  color: #000000;
+}
+
+input:-moz-placeholder {
   color: #000000;
 }
 
@@ -82,11 +90,19 @@ textarea:focus::-moz-placeholder {
   color: transparent;
 }
 
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
 textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
 textarea::-moz-placeholder {
+  color: #000000;
+}
+
+textarea:-moz-placeholder {
   color: #000000;
 }
 

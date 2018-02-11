@@ -46,6 +46,11 @@
   .contacts__form-icon {
     width: 65px;
   }
+
+  .contacts__form-wrapper input {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 1200px) {
