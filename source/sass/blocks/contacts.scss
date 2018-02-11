@@ -35,7 +35,7 @@
 @media (min-width: 768px) {
   .contacts__wrapper {
     padding-top: 25px;
-}
+  }
 
   .contacts__label-wrapper {
     &--email {
@@ -65,7 +65,7 @@
     display: flex;
     white-space: nowrap;
     align-items: baseline;
-    padding-top: 25px;
+    padding-top: 23px;
 
     &:nth-child(2) {
       margin-left: 60px;
@@ -73,6 +73,10 @@
 
     &--shorten {
       display: none;
+    }
+
+    &--email {
+      margin-right: 3px;
     }
   }
 
@@ -103,14 +107,4 @@
   .contacts__form-icon {
     width: 75px;
   }
-
-  .contacts__label {
-    padding-top: 23px;
-
-    &--email {
-      margin-right: 3px;
-    }
-  }
-
-
 }
