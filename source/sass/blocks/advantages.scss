@@ -258,10 +258,10 @@
   .advantages__item {
     &:nth-child(n+3) {
       width: 400px;
-      padding-top: 50px;
+      padding-top: 48px;
       padding-left: 50px;
       padding-right: 50px;
-      padding-bottom: 37px;
+      padding-bottom: 35px;
     }
   }
 
@@ -271,7 +271,7 @@
   }
 
   .advantages__item:nth-child(2) .advantages__header {
-    padding-top: 8px;
+    padding-top: 7px;
   }
 
   .advantages__item:nth-child(4) .advantages__description {
@@ -279,11 +279,13 @@
     padding-right: 20px;
   }
 
-  .advantages__head--wrapper {
-    width: 400px;
-    padding-top: 50px;
-    padding-left: 60px;
-    padding-right: 60px;
+  .advantages__head {
+    &--wrapper {
+      width: 400px;
+      padding-top: 51px;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
   }
 
   .advantages__head--city {

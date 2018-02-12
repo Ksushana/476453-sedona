@@ -1,16 +1,38 @@
 @import "../variables";
 @import "../mixins";
 
+input[placeholder]:hover,
+textarea[placeholder]:hover {
+  background-color: #a4a4a4;
+}
+
+input[placeholder]:focus,
+textarea[placeholder]:focus {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 4px #a4a4a4;
+}
+
 .form {
   @include flex-column;
   padding-top: 2px;
 }
 
 .form__fieldset {
+  position: relative;
   border: none;
   margin: 0;
   padding: 20px;
   width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 320px;
+    border-bottom: 1px solid $grey-line;
+    right: 0;
+    top: -15px;
+  }
 
   &--contacts {
     padding-bottom: 30px;
@@ -18,13 +40,24 @@
 
   &--checkbox {
     padding-top: 15px;
+
+    &::before {
+      top: 9px;
+    }
+  }
+
+  &--text {
+    &::before {
+      top: 6px;
+    }
   }
 }
 
 .form__legend {
+  margin: 0 auto;
   text-align: center;
   font-weight: bold;
-  padding-top: 3px;
+  padding-top: 4px;
 
   @include font-large;
 
@@ -39,10 +72,13 @@
 
 .form__textarea {
   width: 100%;
-  padding-top: 20px;
-  padding-left: 20px;
+  height: 160px;
+  padding: 20px;
   background-color: $dark-grey;
   border: none;
+  overflow: scroll;
+  margin-top: -5px;
+  margin-bottom: 5px;
 }
 
 .form__label {
@@ -63,11 +99,19 @@ input:focus::-moz-placeholder {
   color: transparent;
 }
 
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
 input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
 input::-moz-placeholder {
+  color: #000000;
+}
+
+input:-moz-placeholder {
   color: #000000;
 }
 
@@ -79,11 +123,19 @@ textarea:focus::-moz-placeholder {
   color: transparent;
 }
 
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
 textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
 textarea::-moz-placeholder {
+  color: #000000;
+}
+
+textarea:-moz-placeholder {
   color: #000000;
 }
 
@@ -113,6 +165,10 @@ textarea::-webkit-input-placeholder {
 
     padding: 0;
 
+    &::before {
+      display: none;
+    }
+
     &--full-name {
       width: 267px;
       margin-left: auto;
@@ -129,6 +185,7 @@ textarea::-webkit-input-placeholder {
 
     &--checkbox {
       width: 100%;
+      margin-top: 35px;
     }
 
     &--text {
@@ -139,23 +196,47 @@ textarea::-webkit-input-placeholder {
   .form__legend {
     @include font-huge;
     text-align: left;
+    margin-left: 0;
+    margin-right: auto;
 
     &--contacts {
       padding-top: 48px;
+      margin: 0 auto;
       text-align: center;
     }
 
     &--checkbox {
       padding-top: 5px;
-      padding-left: 120px;
-      padding-right: 120px;
+      margin: 0 auto;
+
+      // padding-left: 120px;
+      // padding-right: 120px;
       text-align: center;
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
     }
 
     &--text {
-      text-align: center;
+      // text-align: center;
+      margin: 0 auto;
       padding-top: 40px;
       padding-bottom: 55px;
+
+      &::before {
+        left: -196px;
+        top: 50px;
+      }
+
+      &::after {
+        right: -196px;
+        top: 50px;
+      }
     }
   }
 
@@ -168,6 +249,7 @@ textarea::-webkit-input-placeholder {
     margin-right: auto;
     margin-left: 0;
     margin-top: 53px;
+    font-weight: bold;
   }
 
   .form__note {
@@ -175,10 +257,40 @@ textarea::-webkit-input-placeholder {
     margin-right: 0;
     margin-top: 75px;
   }
+
+  .form__legend--contacts,
+  .form__legend--checkbox,
+  .form__legend--text {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 126px;
+      position: absolute;
+      height: 1px;
+      border-bottom: 1px solid $grey-line;
+      left: -182px;
+      bottom: 15px;
+    }
+
+    &::after {
+      content: "";
+      width: 126px;
+      position: absolute;
+      height: 1px;
+      border-bottom: 1px solid $grey-line;
+      right: -182px;
+      bottom: 15px;
+    }
+  }
 }
 
 
 @media (min-width: 1200px) {
+  .form {
+    margin-bottom: 5px;
+  }
+
   .form__fieldset {
     &--full-name {
       width: 400px;
@@ -194,6 +306,11 @@ textarea::-webkit-input-placeholder {
     &--text {
       padding-left: 60px;
       padding-right: 60px;
+      margin-top: 13px;
+    }
+
+    &--checkbox {
+      margin-top: 0;
     }
   }
 
@@ -209,11 +326,37 @@ textarea::-webkit-input-placeholder {
     &--checkbox {
       padding-left: 0;
       padding-right: 0;
+
+      &::before {
+        left: -335px;
+        top: 30px;
+      }
+
+      &::after {
+        right: -335px;
+        top: 30px;
+      }
     }
 
     &--text {
       padding-top: 70px;
+      padding-bottom: 60px;
+
+      &::before {
+        left: -356px;
+        top: 80px;
+      }
+
+      &::after {
+        right: -356px;
+        top: 80px;
+      }
     }
+  }
+
+  .form__textarea {
+    padding-top: 18px;
+    margin-bottom: 2px;
   }
 
   .form__button {
@@ -227,5 +370,21 @@ textarea::-webkit-input-placeholder {
     display: block;
     margin-right: 60px;
     margin-top: 70px;
+  }
+
+  .form__legend--contacts,
+  .form__legend--checkbox,
+  .form__legend--text {
+    &::before {
+      width: 280px;
+      left: -337px;
+      bottom: 15px;
+    }
+
+    &::after {
+      width: 280px;
+      right: -337px;
+      bottom: 15px;
+    }
   }
 }

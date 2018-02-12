@@ -37,15 +37,13 @@
 .main-nav--opened .main-nav__toggle::after {
   content: "";
   position: absolute;
-  top: 12px;
-  right: 27px;
+  width: 22px;
+  height: 22px;
+  top: -220px;
+  right: 0;
   background-image: url("../img/icon-cross.svg");
+  background-size: cover;
 }
-
-.main-nav__cross {
-  fill: #ffffff;
-}
-
 
 .main-nav__list {
   @include list-reset;
@@ -135,6 +133,18 @@
     display: flex;
   }
 
+  .main-nav__item a {
+    color: #000000;
+
+    @include flex-center;
+    height: 56px;
+    // width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: none;
+    border-top: none;
+  }
+
   .main-nav__item {
     // // height: 56px;
     // border-bottom: none;
@@ -168,18 +178,18 @@
     &:active a {
       color: $grey-menu-active;
     }
-  }
 
-  .main-nav__item a {
-    color: #000000;
+    &--active a {
+      color: #756359;
+    }
 
-    @include flex-center;
-    height: 56px;
-    // width: 100%;
-    text-align: center;
-    vertical-align: middle;
-    border-bottom: none;
-    border-top: none;
+    &--active:hover a {
+      color: #614f41;
+    }
+
+    &--active:active a {
+      color: #dedad7;
+    }
   }
 
   .main-nav__link {
