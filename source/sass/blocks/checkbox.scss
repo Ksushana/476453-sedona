@@ -3,7 +3,7 @@
 
 .checkbox__inputs {
   @include flex-column;
-  min-height: 295px;
+  height: 295px;
   justify-content: space-between;
   position: relative;
 }
@@ -47,7 +47,7 @@
 
 @media (min-width: 768px) {
   .checkbox__inputs {
-    min-height: 215px;
+    height: 215px;
     flex-direction: row;
     padding-left: 95px;
     padding-right: 45px;
@@ -76,7 +76,7 @@
 
 @media (min-width: 1200px) {
   .checkbox__inputs {
-    min-height: 0;
+    height: 80px;
     flex-direction: row;
     padding-left: 55px;
     padding-right: 65px;

@@ -166,6 +166,18 @@
     &:active a {
       color: $grey-menu-active;
     }
+
+    &--active {
+      color: #756359;
+
+      &:hover a {
+        color: $blue-menu-hover;
+      }
+
+      &:active a {
+        color: $grey-menu-active;
+      }
+    }
   }
 
   .main-nav__item a {

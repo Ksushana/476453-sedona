@@ -4,7 +4,7 @@
 
 .radio__inputs {
   @include flex-column;
-  min-height: 195px;
+  height: 195px;
   padding-top: 5px;
   justify-content: space-between;
 }
@@ -57,7 +57,7 @@
   .radio {
     position: relative;
 
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       height: 292px;
@@ -75,14 +75,14 @@
   .radio__inputs {
     padding-top: 47px;
     margin-top: auto;
-    min-height: 280px;
+    height: 280px;
     justify-content: space-around;
   }
 }
 
 @media (min-width: 1200px) {
   .radio {
-    &::before {
+    &::after {
       right: -130px;
       top: 8px;
     }

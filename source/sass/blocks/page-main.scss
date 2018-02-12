@@ -127,7 +127,7 @@
     &--short {
       height: 290px;
       background-position: 155px 96px, center -225px;
-      background-size: 60%, 768px auto;
+      background-size: 60%, cover;
       background-image: url("../img/text-sedona.svg"), url("../img/bg-back-tablet@1x.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -202,6 +202,8 @@
     &--form {
       padding-top: 27px;
       padding-bottom: 28px;
+      padding-left: 377px;
+      padding-right: 377px;
     }
   }
 

@@ -18,10 +18,21 @@ textarea[placeholder]:focus {
 }
 
 .form__fieldset {
+  position: relative;
   border: none;
   margin: 0;
   padding: 20px;
   width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 320px;
+    border-bottom: 1px solid $grey-line;
+    right: 0;
+    top: -15px;
+  }
 
   &--contacts {
     padding-bottom: 30px;
@@ -29,10 +40,21 @@ textarea[placeholder]:focus {
 
   &--checkbox {
     padding-top: 15px;
+
+    &::before {
+      top: 9px;
+    }
+  }
+
+  &--text {
+    &::before {
+      top: 6px;
+    }
   }
 }
 
 .form__legend {
+  margin: 0 auto;
   text-align: center;
   font-weight: bold;
   padding-top: 4px;
@@ -143,6 +165,10 @@ textarea::-webkit-input-placeholder {
 
     padding: 0;
 
+    &::before {
+      display: none;
+    }
+
     &--full-name {
       width: 267px;
       margin-left: auto;
@@ -170,16 +196,21 @@ textarea::-webkit-input-placeholder {
   .form__legend {
     @include font-huge;
     text-align: left;
+    margin-left: 0;
+    margin-right: auto;
 
     &--contacts {
       padding-top: 48px;
+      margin: 0 auto;
       text-align: center;
     }
 
     &--checkbox {
       padding-top: 5px;
-      padding-left: 120px;
-      padding-right: 120px;
+      margin: 0 auto;
+
+      // padding-left: 120px;
+      // padding-right: 120px;
       text-align: center;
 
       &::before {
@@ -192,7 +223,8 @@ textarea::-webkit-input-placeholder {
     }
 
     &--text {
-      text-align: center;
+      // text-align: center;
+      margin: 0 auto;
       padding-top: 40px;
       padding-bottom: 55px;
 
