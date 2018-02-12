@@ -44,7 +44,6 @@
     <main class="page-main">
       <section class="page-main__head">
         <div class="page-main__head-image page-main__head-image--short">
-          <!-- <img class="page-main__img-top page-main__img-top--short" src="img/text-sedona.svg" width="320" height="390" alt="Sedona"> -->
         </div>
         <h1  class="page-main__header page-main__header--form">Оставьте свой отзыв</h1>
         <p class="page-main__intro page-main__intro--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -72,7 +71,7 @@
               <div class="contacts__label-wrapper contacts__label-wrapper--email">
                 <label class="form__label contacts__label  contacts__label--email" for="email"> Электронная почта*: </label>
                 <div class="contacts__form-wrapper contacts__form-wrapper--email">
-                  <input class="form__email form__input" type="email" required name="Введите e-mail" placeholder="Введите e-mail">
+                  <input class="form__email form__input" type="email" id="email" required name="Введите e-mail" placeholder="Введите e-mail">
                   <span class="contacts__form-icon contacts__form-icon--email"></span>
                 </div>
               </div>
@@ -172,7 +171,7 @@
 
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
-  <div>
+  </div>
 
   <script>
     var navMain = document.querySelector('.main-nav');
