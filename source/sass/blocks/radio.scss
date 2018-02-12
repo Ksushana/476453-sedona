@@ -50,6 +50,10 @@
 }
 
 .radio__item:active input[type="radio"] + label::before {
+  background-color: #d5d5d5;
+}
+
+.radio__item:active input[type="radio"]:checked + label::after {
   background-color: #a4a4a4;
 }
 
