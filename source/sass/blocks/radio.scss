@@ -45,6 +45,14 @@
   left: 17px;
 }
 
+.radio__item:hover input[type="radio"] + label::before {
+  background-color: $grey-disabled;
+}
+
+.radio__item:active input[type="radio"] + label::before {
+  background-color: #a4a4a4;
+}
+
 @media (min-width: 768px) {
   .radio {
     position: relative;
