@@ -137,6 +137,7 @@
   }
 
   .advantages__item {
+    // min-height: 255px;
     display: flex;
     flex-wrap: wrap;
 
@@ -169,7 +170,9 @@
 
   .advantages__head--city {
     position: relative;
-    height: 256px;
+    width: 768px;
+    padding-right: 555px;
+    min-height: 256px;
 
     &::after {
       content: "";
@@ -193,7 +196,7 @@
     width: 768px;
     position: relative;
     padding-left: 556px;
-    height: 256px;
+    min-height: 256px;
 
     &::after {
       content: "";
@@ -339,8 +342,8 @@
   }
 
   .advantages__header {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 
   .advantages__number {

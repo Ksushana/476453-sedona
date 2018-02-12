@@ -77,6 +77,10 @@
     background-color: $dark-grey;
     min-height: 80px;
     padding-left: 20px;
+
+    &--dark {
+      background-color: #eaeaea;
+    }
   }
 
   .photo__popularity {
