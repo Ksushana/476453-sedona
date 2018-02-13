@@ -55,13 +55,27 @@ textarea[placeholder]:focus {
 
   @include font-large;
 
+  &--full-name {
+    margin-left: 68px;
+  }
+
+  &--contacts {
+    margin-left: 20px;
+  }
+
+  &--radio {
+    margin-left: 20px;
+  }
+
   &--checkbox {
     padding-top: 18px;
     padding-bottom: 3px;
+    margin-left: 20px;
   }
 
   &--text {
     padding-top: 2px;
+    margin-left: 30px;
   }
 }
 
@@ -208,12 +222,14 @@ textarea::-webkit-input-placeholder {
       padding-top: 48px;
       margin: 0 auto;
       text-align: center;
+      margin-left: 185px;
     }
 
     &--checkbox {
       padding-top: 5px;
       margin: 0 auto;
       text-align: center;
+      margin-left: 185px;
 
       &::before {
         left: 0;
@@ -229,6 +245,7 @@ textarea::-webkit-input-placeholder {
       margin: 0 auto;
       padding-top: 40px;
       padding-bottom: 55px;
+      margin-left: 195px;
 
       &::before {
         left: -196px;
@@ -334,12 +351,14 @@ textarea::-webkit-input-placeholder {
     &--contacts {
       padding-top: 48px;
       margin: 0 auto;
+      margin-left: 400px;
     }
 
     &--checkbox {
       padding-left: 0;
       padding-right: 0;
       margin: 0 auto;
+      margin-left: 400px;
 
       &::before {
         left: -335px;
@@ -355,7 +374,9 @@ textarea::-webkit-input-placeholder {
     &--text {
       padding-top: 70px;
       padding-bottom: 60px;
-      margin: 0 340px;
+      margin: 0 auto;
+      margin-left: 350px;
+
 
       &::before {
         left: -356px;
