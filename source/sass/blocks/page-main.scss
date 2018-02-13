@@ -69,6 +69,7 @@
 
 .page-main__intro {
   @include zero;
+  position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
   color: #333333;
@@ -87,6 +88,16 @@
     padding-top: 25px;
     // padding-bottom: 35px;
     line-height: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 320px;
+      border-bottom: 1px solid $grey-line;
+      right: 0;
+      bottom: 12px;;
+    }
   }
 }
 
@@ -168,6 +179,12 @@
   .page-main__intro {
     padding-left: 165px;
     padding-right: 165px;
+
+    &--form {
+      &::before {
+        display: none;
+      }
+    }
   }
 }
 
