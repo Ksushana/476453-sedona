@@ -49,6 +49,7 @@
 }
 
 .photo__like {
+  cursor: pointer;
   fill: $logo-active;
   background-color: #ffffff;
 }
@@ -101,6 +102,10 @@
 
   .photo__like {
     background-color: transparent;
+  }
+
+  .photo__info--dark .photo__like {
+    background-color: #eaeaea;
   }
 }
 

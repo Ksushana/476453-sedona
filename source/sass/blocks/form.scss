@@ -95,11 +95,6 @@ textarea[placeholder]:focus {
   color: #000000;
 }
 
-::-webkit-input-placeholder {color: #000000;}
-::-moz-placeholder          {color: #000000;}
-:-moz-placeholder           {color: #000000;}
-:-ms-input-placeholder      {color: #000000;}
-
 input:focus::-moz-placeholder {
   color: transparent;
 }
@@ -114,10 +109,12 @@ input:focus::-webkit-input-placeholder {
 
 input::-moz-placeholder {
   color: #000000;
+  opacity: 1;
 }
 
 input:-moz-placeholder {
   color: #000000;
+  opacity: 1;
 }
 
 input::-webkit-input-placeholder {
@@ -138,10 +135,12 @@ textarea:focus::-webkit-input-placeholder {
 
 textarea::-moz-placeholder {
   color: #000000;
+  opacity: 1;
 }
 
 textarea:-moz-placeholder {
   color: #000000;
+  opacity: 1;
 }
 
 textarea::-webkit-input-placeholder {
@@ -300,7 +299,6 @@ textarea::-webkit-input-placeholder {
   .form__legend--checkbox::after {
     bottom: 25px;
   }
-
 }
 
 
@@ -339,11 +337,13 @@ textarea::-webkit-input-placeholder {
 
     &--contacts {
       padding-top: 48px;
+      margin: 0 auto;
     }
 
     &--checkbox {
       padding-left: 0;
       padding-right: 0;
+      margin: 0 auto;
 
       &::before {
         left: -335px;
@@ -359,6 +359,7 @@ textarea::-webkit-input-placeholder {
     &--text {
       padding-top: 70px;
       padding-bottom: 60px;
+      margin: 0 340px;
 
       &::before {
         left: -356px;

@@ -33,6 +33,10 @@
 }
 
 @media (min-width: 768px) {
+  .contacts__legend {
+    margin: 0 auto;
+  }
+
   .contacts__wrapper {
     padding-top: 25px;
   }
