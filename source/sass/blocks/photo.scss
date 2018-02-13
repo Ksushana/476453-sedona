@@ -94,6 +94,7 @@
 
   .photo__likes {
     background-color: $dark-grey;
+    background-color: #eaeaea;
   }
 
   .photo__likes-ammount {
@@ -102,10 +103,6 @@
 
   .photo__like {
     background-color: transparent;
-  }
-
-  .photo__info--dark .photo__like {
-    background-color: #eaeaea;
   }
 }
 
