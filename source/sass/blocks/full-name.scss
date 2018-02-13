@@ -10,7 +10,12 @@
 
 .full-name__label input {
   margin-left: 14px;
+  min-width: 50%;
 }
+
+// .full-name__label input[placeholder] {
+//   font-size: 14px;
+// }
 
 @media (min-width: 768px) {
   .full-name__legend {
