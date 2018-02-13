@@ -218,9 +218,6 @@ textarea::-webkit-input-placeholder {
     &--checkbox {
       padding-top: 5px;
       margin: 0 auto;
-
-      // padding-left: 120px;
-      // padding-right: 120px;
       text-align: center;
 
       &::before {
@@ -233,7 +230,7 @@ textarea::-webkit-input-placeholder {
     }
 
     &--text {
-      // text-align: center;
+      text-align: center;
       margin: 0 auto;
       padding-top: 40px;
       padding-bottom: 55px;
