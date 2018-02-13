@@ -64,6 +64,7 @@ textarea[placeholder] {
 .container {
   margin: 0 auto;
   width: 320px;
+  background-color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -80,11 +81,13 @@ textarea[placeholder] {
 @media (min-width: 1200px) {
   .body {
     @include desktop;
+    background-color: #f1f1f1;
   }
 
   .container {
     width: 1200px;
     padding: 0;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
   }
 }
 

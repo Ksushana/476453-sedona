@@ -95,6 +95,11 @@ textarea[placeholder]:focus {
   color: #000000;
 }
 
+::-webkit-input-placeholder {color: #000000;}
+::-moz-placeholder          {color: #000000;}
+:-moz-placeholder           {color: #000000;}
+:-ms-input-placeholder      {color: #000000;}
+
 input:focus::-moz-placeholder {
   color: transparent;
 }
@@ -149,8 +154,13 @@ textarea::-webkit-input-placeholder {
 
 .form__button {
   width: 280px;
-  margin: 20px auto 43px;
+  margin: 21px auto 42px;
   font-weight: bold;
+}
+
+.form__tel,
+.form__email {
+  margin: 0;
 }
 
 
@@ -248,14 +258,14 @@ textarea::-webkit-input-placeholder {
     width: 323px;
     margin-right: auto;
     margin-left: 0;
-    margin-top: 53px;
+    margin-top: 50px;
     font-weight: bold;
   }
 
   .form__note {
     display: block;
     margin-right: 0;
-    margin-top: 75px;
+    margin-top: 72px;
   }
 
   .form__legend--contacts,
@@ -283,6 +293,17 @@ textarea::-webkit-input-placeholder {
       bottom: 15px;
     }
   }
+
+  .form__legend--contacts::before,
+  .form__legend--contacts::after {
+    bottom: 13px;
+  }
+
+  .form__legend--checkbox::before,
+  .form__legend--checkbox::after {
+    bottom: 25px;
+  }
+
 }
 
 

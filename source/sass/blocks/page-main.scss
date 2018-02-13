@@ -58,10 +58,12 @@
 
   &--foto {
     @include font-large;
+    padding-top: 38px;
   }
 
   &--form {
     @include font-large;
+    padding-top: 37px;
   }
 }
 
@@ -72,9 +74,10 @@
   color: #333333;
 
   &--photo {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-top: 25px;
+    padding-bottom: 31px;
     line-height: 24px;
   }
 
@@ -146,31 +149,18 @@
       z-index: 3;
       background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
     }
-
-    // // &:after {
-    // //   content: "";
-    // //   position: absolute;
-    // //   width: 700px;
-    // //   height: 50px;
-    // //   bottom: 10px;
-    // //   left: 40px;
-    // //   z-index: 100;
-    // //   background-image: url("../img/bg-intro-triangle-mobile.svg");
-    // //   background-repeat: no-repeat;
-    // //   // background-size: cover;
-    // }
   }
 
   .page-main__header {
     font-size: 30px;
 
     &--foto {
-      padding-top: 77px;
+      padding-top: 76px;
       padding-bottom: 5px;
     }
 
     &--form {
-      padding-top: 77px;
+      padding-top: 76px;
       padding-bottom: 5px;
     }
   }

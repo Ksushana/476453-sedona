@@ -77,27 +77,36 @@
       order: 2;
     }
   }
+
+  .checkbox__item label::before {
+    top: -15px;
+  }
 }
 
 @media (min-width: 1200px) {
   .checkbox__inputs {
     height: 80px;
     flex-direction: row;
-    padding-left: 55px;
+    padding-left: 60px;
     padding-right: 65px;
     padding-top: 41px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 
   .checkbox__item {
     margin-left: auto;
     min-width: 200px;
-    text-align: center;
+    text-align: left;
+
 
     &:first-child {
       margin-left: 0;
-      margin-right: 10px;
+      margin-right: 20px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 20px;
     }
   }
 

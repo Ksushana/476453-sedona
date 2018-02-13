@@ -22,7 +22,7 @@
 }
 
 .photo__header {
-  padding-top: 17px;
+  padding-top: 15px;
   font-size: inherit;
 }
 
@@ -33,7 +33,7 @@
 
 .photo__popularity {
   display: flex;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 .photo__likes-ammount {
@@ -112,7 +112,7 @@
     &--big {
       min-width: 1200px;
       height: 440px;
-      padding-top: 42px;
+      padding-top: 40px;
     }
   }
 
