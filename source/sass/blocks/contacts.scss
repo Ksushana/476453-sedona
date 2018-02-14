@@ -6,7 +6,7 @@
   padding-left: 20px;
 }
 
-.contacts__label--shorten {
+.contacts__short-label {
   display: inline;
 }
 
@@ -77,13 +77,13 @@
       margin-left: 60px;
     }
 
-    &--shorten {
-      display: none;
-    }
-
     &--email {
       margin-right: 19px;
     }
+  }
+
+  .contacts__short-label {
+    display: none;
   }
 
   .form__tel,
