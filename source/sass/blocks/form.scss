@@ -204,7 +204,7 @@ textarea::-webkit-input-placeholder {
 
     &--checkbox {
       width: 100%;
-      margin-top: 35px;
+      margin-top: 18px;
     }
 
     &--text {
@@ -219,7 +219,7 @@ textarea::-webkit-input-placeholder {
     margin-right: auto;
 
     &--contacts {
-      padding-top: 48px;
+      padding-top: 35px;
       margin: 0 auto;
       text-align: center;
       margin-left: 185px;
@@ -233,28 +233,30 @@ textarea::-webkit-input-placeholder {
 
       &::before {
         left: 0;
+        top: 30px;
       }
 
       &::after {
         right: 0;
+        top: 30px;
       }
     }
 
     &--text {
       text-align: center;
       margin: 0 auto;
-      padding-top: 40px;
-      padding-bottom: 55px;
+      padding-top: 21px;
+      padding-bottom: 60px;
       margin-left: 195px;
 
       &::before {
         left: -196px;
-        top: 50px;
+        top: 34px;
       }
 
       &::after {
         right: -196px;
-        top: 50px;
+        top:34px;
       }
     }
   }
@@ -317,7 +319,7 @@ textarea::-webkit-input-placeholder {
 
 @media (min-width: 1200px) {
   .form {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
   }
 
   .form__fieldset {
@@ -336,6 +338,7 @@ textarea::-webkit-input-placeholder {
       padding-left: 60px;
       padding-right: 60px;
       margin-top: 13px;
+      margin-bottom: 2px;
     }
 
     &--checkbox {
@@ -349,7 +352,7 @@ textarea::-webkit-input-placeholder {
     }
 
     &--contacts {
-      padding-top: 48px;
+      padding-top: 33px;
       margin: 0 auto;
       margin-left: 400px;
     }
@@ -359,33 +362,35 @@ textarea::-webkit-input-placeholder {
       padding-right: 0;
       margin: 0 auto;
       margin-left: 400px;
+      padding-bottom: 0;
+      padding-top: 2px;
 
       &::before {
         left: -335px;
-        top: 30px;
+        top: 28px;
       }
 
       &::after {
         right: -335px;
-        top: 30px;
+        top: 28px;
       }
     }
 
     &--text {
-      padding-top: 70px;
+      padding-top: 55px;
       padding-bottom: 60px;
       margin: 0 auto;
       margin-left: 350px;
 
 
       &::before {
-        left: -356px;
-        top: 80px;
+        left: -320px;
+        top: 67px;
       }
 
       &::after {
         right: -356px;
-        top: 80px;
+        top: 67px;
       }
     }
   }
