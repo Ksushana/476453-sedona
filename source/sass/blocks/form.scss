@@ -263,6 +263,7 @@ textarea::-webkit-input-placeholder {
 
   .form__textarea {
     height: 160px;
+    resize: none;
   }
 
   .form__button {
