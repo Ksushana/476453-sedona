@@ -21,6 +21,10 @@
   .full-name__legend {
     margin-bottom: 57px;
   }
+
+  .full-name__label:nth-child(4) {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 1200px) {

@@ -42,12 +42,16 @@
   }
 
   .contacts__wrapper {
-    padding-top: 25px;
+    padding-top: 23px;
+  }
+
+  .contacts__form-wrapper {
+    margin-top: 7px;
   }
 
   .contacts__label-wrapper {
     &--email {
-      margin-top: 25px;
+      margin-top: 24px;
     }
   }
 
@@ -65,7 +69,7 @@
   .contacts__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 69px 60px 20px 40px;
+    padding: 67px 60px 20px 40px;
     // width: 400px;
   }
 

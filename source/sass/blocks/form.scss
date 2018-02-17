@@ -77,16 +77,15 @@ textarea[placeholder]:focus {
   &--checkbox {
     padding-top: 18px;
     padding-bottom: 3px;
-    // margin-left: 20px;
   }
 
   &--text {
-    // padding-top: 2px;
     margin-left: 30px;
   }
 }
 
 .form__textarea {
+  @include zero;
   width: 100%;
   height: 160px;
   padding: 20px;
@@ -198,12 +197,12 @@ textarea::-webkit-input-placeholder {
     &--full-name {
       width: 267px;
       margin-left: auto;
+      margin-bottom: 0;
     }
 
     &--radio {
       order: -1;
       width: 50%;
-      @include zero;
     }
 
     &--contacts {
@@ -216,81 +215,10 @@ textarea::-webkit-input-placeholder {
     }
 
     &--text {
+      @include zero;
       width: 100%;
+      margin-bottom: 0;
     }
-  }
-
-  .form__legend {
-    @include font-huge;
-    text-align: left;
-    margin-left: 0;
-    margin-right: auto;
-
-    &--full-name {
-      margin-bottom: 54px;
-    }
-
-    &--contacts {
-      padding-top: 35px;
-      margin: 0 auto;
-      text-align: center;
-      margin-left: 185px;
-    }
-
-    &--checkbox {
-      padding-top: 5px;
-      margin: 0 auto;
-      text-align: center;
-      margin-left: 185px;
-      width: 280px;
-
-      &::before {
-        left: 0;
-        top: 30px;
-      }
-
-      &::after {
-        right: 0;
-        top: 30px;
-      }
-    }
-
-    &--text {
-      text-align: center;
-      margin: 0 auto;
-      padding-top: 21px;
-      padding-bottom: 60px;
-      margin-left: 195px;
-
-      &::before {
-        left: -196px;
-        top: 34px;
-      }
-
-      &::after {
-        right: -196px;
-        top: 34px;
-      }
-    }
-  }
-
-  .form__textarea {
-    height: 160px;
-    resize: none;
-  }
-
-  .form__button {
-    width: 323px;
-    margin-right: auto;
-    margin-left: 0;
-    margin-top: 50px;
-    font-weight: bold;
-  }
-
-  .form__note {
-    display: block;
-    margin-right: 0;
-    margin-top: 72px;
   }
 
   .form__legend--contacts,
@@ -319,6 +247,92 @@ textarea::-webkit-input-placeholder {
     }
   }
 
+  .form__legend {
+    @include font-huge;
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+
+    &--full-name {
+      padding-top: 8px;
+      margin-bottom: 54px;
+      padding-bottom: 1px;
+    }
+
+    &--radio {
+      padding-top: 8px;
+    }
+
+    &--contacts {
+      padding-top: 62px;
+      margin: 0 auto;
+      text-align: center;
+      margin-left: 185px;
+    }
+
+    &--checkbox {
+      padding-top: 4px;
+      margin: 0 auto;
+      text-align: center;
+      margin-left: 185px;
+      width: 280px;
+
+      &::before {
+        // left: 0;
+        top: 30px;
+      }
+
+      &::after {
+        // right: 0;
+        top: 30px;
+      }
+    }
+
+    &--text {
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 21px;
+      padding-bottom: 60px;
+      margin-left: 195px;
+
+      &::before {
+        left: -196px;
+        top: 34px;
+      }
+
+      &::after {
+        right: -196px;
+        top: 34px;
+      }
+    }
+  }
+
+  .form__textarea {
+    height: 160px;
+    resize: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 15px;
+    vertical-align: bottom;
+  }
+
+  .form__button {
+    width: 323px;
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 55px;
+    margin-bottom: 46px;
+    font-weight: bold;
+    padding-left: 0;
+    padding-right: 14px;
+  }
+
+  .form__note {
+    display: block;
+    margin-right: 0;
+    margin-top: 75px;
+  }
+
   .form__legend--contacts::before,
   .form__legend--contacts::after {
     bottom: 13px;
@@ -332,10 +346,6 @@ textarea::-webkit-input-placeholder {
 
 
 @media (min-width: 1200px) {
-  .form {
-    margin-bottom: 7px;
-  }
-
   .form__fieldset {
     &--full-name {
       width: 400px;
@@ -344,7 +354,7 @@ textarea::-webkit-input-placeholder {
     }
 
     &--radio {
-      width: 412px;
+      width: 540px;
       padding-left: 75px;
     }
 
@@ -352,7 +362,7 @@ textarea::-webkit-input-placeholder {
       padding-left: 60px;
       padding-right: 60px;
       margin-top: 13px;
-      margin-bottom: 2px;
+      margin-bottom: 8px;
     }
 
     &--checkbox {
@@ -363,14 +373,16 @@ textarea::-webkit-input-placeholder {
   .form__legend {
     &--full-name {
       margin-bottom: 55px;
+      padding-top: 3px;
     }
 
     &--radio {
-      text-align: right;
+      padding-top: 3px;
+      margin-left: 61px;
     }
 
     &--contacts {
-      padding-top: 33px;
+      padding-top: 60px;
       margin: 0 auto;
       margin-left: 400px;
     }
@@ -396,7 +408,7 @@ textarea::-webkit-input-placeholder {
 
     &--text {
       padding-top: 55px;
-      padding-bottom: 60px;
+      padding-bottom: 56px;
       margin: 0 auto;
       margin-left: 350px;
 
@@ -423,6 +435,7 @@ textarea::-webkit-input-placeholder {
     margin-right: auto;
     margin-left: 60px;
     margin-top: 50px;
+    padding-left: 11px;
   }
 
   .form__note {

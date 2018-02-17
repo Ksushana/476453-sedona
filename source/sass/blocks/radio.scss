@@ -60,16 +60,7 @@
 @media (min-width: 768px) {
   .radio {
     position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      height: 292px;
-      width: 1px;
-      border-left: 1px solid $grey-line;
-      right: 0;
-      top: 8px;
-    }
+    border-right: 1px solid $grey-line;
   }
 
   .radio__item label {
@@ -81,6 +72,10 @@
     margin-top: auto;
     height: 280px;
     justify-content: space-around;
+  }
+
+  .radio-item {
+    margin-top: 15px;
   }
 }
 
