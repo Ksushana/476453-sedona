@@ -60,7 +60,7 @@
 @media (min-width: 768px) {
   .radio {
     position: relative;
-    border-right: 1px solid $grey-line;
+    // border-right: 1px solid $grey-line;
   }
 
   .radio__item label {
@@ -72,6 +72,17 @@
     margin-top: auto;
     height: 280px;
     justify-content: space-around;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 292px;
+      background-color: $grey-line;
+      top: -20px;
+      right: 0;
+    }
   }
 
   .radio-item {
