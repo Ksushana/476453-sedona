@@ -2,39 +2,44 @@
 @import "../mixins";
 
 .contacts__label {
-  margin-bottom: 15px;
-  padding-left: 20px;
+  margin-bottom: 7px;
+  padding-left: 22px;
+}
+
+.contacts__label-wrapper {
+  @include flex-column;
+  position: relative;
+  margin-bottom: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+    bottom: 0;
+  }
+
+  &--email {
+    margin-bottom: 15px;
+  }
+
+  &--tel::after {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--email::after {
+    background-image: url("../img/icon-mail.svg");
+  }
 }
 
 .contacts__short-label {
   display: inline;
 }
 
-.contacts__form-wrapper {
-  margin-top: 5px;
-  margin-bottom: 15px;
-  display: flex;
-
-  &--tel {
-    margin-bottom: 13px;
-  }
-}
-
-.contacts__form-icon {
-  width: 70px;
-  height: 58px;
-  background-color: #e6e6e6;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &--tel {
-    background-image: url("../img/icon-phone.svg");
-  }
-
-  &--email {
-    background-image: url("../img/icon-mail.svg");
-  }
-}
 
 @media (min-width: 768px) {
   .contacts__label {
@@ -49,10 +54,6 @@
     padding-top: 23px;
   }
 
-  .contacts__form-wrapper {
-    margin-top: 7px;
-  }
-
   .contacts__label-wrapper {
     &--email {
       margin-top: 24px;
@@ -63,7 +64,7 @@
     width: 65px;
   }
 
-  .contacts__form-wrapper input {
+  .contacts__input {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -72,9 +73,18 @@
 @media (min-width: 1200px) {
   .contacts__wrapper {
     display: flex;
-    justify-content: space-between;
-    padding: 67px 60px 20px 40px;
-    // width: 400px;
+    padding: 72px 60px 21px 40px;
+  }
+
+  .contacts__label-wrapper {
+    flex-direction: row;
+    width: 420px;
+    height: 58px;
+
+    &:nth-child(2) {
+      margin-left: auto;
+      width: 502px;
+    }
   }
 
   .contacts__label {
@@ -82,12 +92,9 @@
     display: inline-block;
     white-space: nowrap;
     align-items: baseline;
-    padding-top: 23px;
+    padding-top: 18px;
     margin-right: 15px;
 
-    &:nth-child(2) {
-      margin-left: 60px;
-    }
 
     &--email {
       margin-right: 19px;
@@ -98,32 +105,13 @@
     display: none;
   }
 
-  .form__tel,
-  .form__email {
-    margin-left: 16px;
-    margin-bottom: 0;
-    width: 254px;
-    height: 58px;
-  }
-
   .form__email {
     margin-left: 14px;
   }
 
   .contacts__label-wrapper {
-    display: flex;
-    justify-content: space-between;
-
     &--email {
       margin-top: 0;
     }
-  }
-
-  .contacts__form-wrapper {
-    width: 315px;
-  }
-
-  .contacts__form-icon {
-    width: 75px;
   }
 }
