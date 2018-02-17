@@ -16,6 +16,11 @@
   }
 }
 
+.photo a,
+.photo img {
+  display: block;
+}
+
 .photo__header,
 .photo__author {
   @include zero;

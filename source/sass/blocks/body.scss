@@ -46,14 +46,6 @@ a {
   text-decoration: none;
 }
 
-a,
-img,
-input,
-button,
-span {
-  display: block;
-}
-
 input[placeholder],
 textarea[placeholder] {
   font-family: inherit;
@@ -103,6 +95,7 @@ textarea[placeholder] {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
+  font-size: inherit;
   position: absolute;
   width: 1px;
   height: 1px;
@@ -117,6 +110,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   @include flex-center;
+  font-family: inherit;
   min-width: 280px;
   height: 57px;
   background-color: $blue;
@@ -140,7 +134,7 @@ input[type="radio"].visually-hidden {
     color: $blue-active-font;
   }
 
-  &--disabled {
+  &:disabled {
     background-color: $grey-disabled;
   }
 }

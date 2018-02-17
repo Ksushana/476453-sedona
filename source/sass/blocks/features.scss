@@ -70,18 +70,13 @@
   color: #333333;
 }
 
-.features-note--souvenir br {
-  display: none;
-}
-
-
 @media (min-width: 768px) {
   .features {
     display: flex;
     text-align: center;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 60px;
+    padding-bottom: 62px;
   }
 
 
@@ -192,7 +187,8 @@
     }
   }
 
-  .features-note--souvenir br {
-    display: inline;
+  .features-note__without-br {
+    width: 167px;
+    margin: 0 80px;
   }
 }

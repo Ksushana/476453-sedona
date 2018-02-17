@@ -10,7 +10,7 @@
   background-color: #ffffff;
   text-align: center;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
 
   @include flex-column;
@@ -62,7 +62,7 @@
 
     height: 347px;
     width: 400px;
-    bottom: 190px
+    bottom: 190px;
   }
 
   .pop-up--success {
@@ -100,9 +100,8 @@
 }
 
 @media (min-width: 1200px) {
-
   .pop-up--error {
-    bottom: 65px
+    bottom: 65px;
   }
 
   .pop-up--success {

@@ -16,7 +16,7 @@ var del = require("del");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 var htmlmin = require("gulp-htmlmin");
-var minijs = require("gulp-uglify");
+var uglify = require("gulp-uglify");
 
 gulp.task("clean", function () {
   return del("build");
@@ -114,6 +114,7 @@ gulp.task("build", function (done) {
     "webp",
     "sprite",
     "html",
+    "jsmin",
     done
   );
 });

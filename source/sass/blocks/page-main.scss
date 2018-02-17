@@ -43,7 +43,7 @@
     width: 320px;
     height: 30px;
     bottom: 0;
-    left: 0px;
+    left: 0;
     z-index: 100;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-size: 333px auto;
@@ -139,7 +139,7 @@
     }
 
     &--short {
-      height: 290px;
+      height: 289px;
       background-position: 155px 96px, center -225px;
       background-size: 60%, cover;
       background-image: url("../img/text-sedona.svg"), url("../img/bg-back-tablet@1x.jpg");

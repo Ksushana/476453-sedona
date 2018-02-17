@@ -23,6 +23,10 @@
   position: relative;
 }
 
+.video-presentation__poster img {
+  display: block;
+}
+
 .video-presentation__controls {
   position: absolute;
   top: 156px;
@@ -104,7 +108,7 @@
   }
 
   .video-presentation__intro {
-    padding: 27px 175px 72px;
+    padding: 27px 175px 74px;
   }
 
   .video-presentation__poster {
