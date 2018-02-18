@@ -6,6 +6,8 @@
   @include list-reset;
   @include zero;
   @include black-font;
+  display: flex;
+  flex-wrap: wrap;
   text-align: left;
   padding-top: 9px;
   padding-left: 70px;

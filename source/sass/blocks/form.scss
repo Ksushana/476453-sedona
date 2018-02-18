@@ -42,13 +42,13 @@ outline: 2px solid #1e90ff;
   }
 
   &--radio {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     margin-bottom: 0;
   }
 
   &--checkbox {
     padding-top: 15px;
-    padding-bottom: 25px;
+    padding-bottom: 0;
   }
 
   &--text {
@@ -269,7 +269,7 @@ textarea::-webkit-input-placeholder {
     }
 
     &--contacts {
-      padding-top: 62px;
+      padding-top: 48px;
       margin: 0 auto;
       text-align: center;
       margin-left: 185px;
@@ -387,7 +387,7 @@ textarea::-webkit-input-placeholder {
     }
 
     &--contacts {
-      padding-top: 60px;
+      padding-top: 45px;
       margin: 0 auto;
       margin-left: 400px;
     }

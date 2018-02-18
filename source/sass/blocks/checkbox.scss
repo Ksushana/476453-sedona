@@ -3,9 +3,13 @@
 
 .checkbox__inputs {
   @include flex-column;
-  height: 295px;
+  // height: 295px;
   justify-content: space-between;
   position: relative;
+}
+
+.checkbox__item {
+  margin-bottom: 40px;
 }
 
 .checkbox__item label {
@@ -59,7 +63,6 @@
 
 @media (min-width: 768px) {
   .checkbox__inputs {
-    height: 215px;
     flex-direction: row;
     padding-left: 95px;
     padding-right: 45px;
@@ -70,7 +73,7 @@
 
   .checkbox__item {
     min-width: 248px;
-    margin-bottom: 0;
+    margin-bottom: 48px;
     max-width: 250px;
 
     &:nth-child(2) {
@@ -93,13 +96,11 @@
 
 @media (min-width: 1200px) {
   .checkbox__inputs {
-    height: 80px;
     flex-direction: row;
     padding-left: 60px;
     padding-right: 65px;
     padding-top: 43px;
     flex-wrap: wrap;
-    // justify-content: space-between;
   }
 
   .checkbox__item {

@@ -4,7 +4,7 @@
 
 .radio__inputs {
   @include flex-column;
-  height: 195px;
+  // min-height: 195px;
   padding-top: 5px;
   justify-content: space-between;
 }
@@ -12,6 +12,7 @@
 .radio__item {
   text-transform: none;
   position: relative;
+  margin-bottom: 28px;
 }
 
 .radio__item label {
@@ -60,7 +61,10 @@
 @media (min-width: 768px) {
   .radio {
     position: relative;
-    // border-right: 1px solid $grey-line;
+  }
+
+  .radio__item {
+    margin-bottom: 38px;
   }
 
   .radio__item label {
@@ -68,9 +72,8 @@
   }
 
   .radio__inputs {
-    padding-top: 47px;
+    padding-top: 60px;
     margin-top: auto;
-    height: 280px;
     justify-content: space-around;
     position: relative;
 
@@ -78,7 +81,7 @@
       content: "";
       position: absolute;
       width: 1px;
-      height: 292px;
+      height: 100%;
       background-color: $grey-line;
       top: -20px;
       right: 0;
