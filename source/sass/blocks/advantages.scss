@@ -279,7 +279,7 @@
   .advantages__head--city {
     position: relative;
     width: 1200px;
-    padding-right: 870px;
+    padding-right: 860px;
 
     &::after {
       content: "";
@@ -297,6 +297,10 @@
         background-image: url("../img/main-city-desktop@2x.jpg");
         background-size: 800px auto;
       }
+    }
+
+    .advantages__head--city .advantages__header {
+      padding-bottom: 11px;
     }
   }
 
@@ -338,5 +342,9 @@
   .advantages__image {
     max-height: 255px;
     min-width: 800px;
+  }
+
+  .advantages__item--small .advantages__description {
+    padding-top: 22px;
   }
 }

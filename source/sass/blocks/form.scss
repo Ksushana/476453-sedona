@@ -271,7 +271,7 @@ textarea::-webkit-input-placeholder {
     }
 
     &--contacts {
-      padding-top: 48px;
+      padding-top: 45px;
       margin: 0 auto;
       text-align: center;
       margin-left: 185px;
@@ -327,7 +327,7 @@ textarea::-webkit-input-placeholder {
     width: 323px;
     margin-right: auto;
     margin-left: 0;
-    margin-top: 55px;
+    margin-top: 57px;
     margin-bottom: 46px;
     font-weight: bold;
     padding-left: 0;
@@ -337,7 +337,7 @@ textarea::-webkit-input-placeholder {
   .form__note {
     display: block;
     margin-right: 0;
-    margin-top: 75px;
+    margin-top: 77px;
   }
 
   .form__legend--contacts::before,
@@ -368,7 +368,7 @@ textarea::-webkit-input-placeholder {
     &--text {
       padding-left: 60px;
       padding-right: 60px;
-      margin-top: 13px;
+      margin-top: 10px;
       margin-bottom: 8px;
     }
 
@@ -400,16 +400,16 @@ textarea::-webkit-input-placeholder {
       margin: 0 auto;
       margin-left: 400px;
       padding-bottom: 0;
-      padding-top: 2px;
+      padding-top: 1px;;
 
       &::before {
         left: -335px;
-        top: 28px;
+        top: 26px;
       }
 
       &::after {
         right: -335px;
-        top: 28px;
+        top: 26px;
       }
     }
 

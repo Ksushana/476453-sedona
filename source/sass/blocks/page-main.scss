@@ -171,7 +171,7 @@
     }
 
     &--form {
-      padding-top: 76px;
+      padding-top: 75px;
       padding-bottom: 5px;
     }
   }
@@ -179,6 +179,7 @@
   .page-main__intro {
     padding-left: 165px;
     padding-right: 165px;
+    padding-bottom: 31px;
 
     &--form {
       &::before {
@@ -193,7 +194,7 @@
     font-size: 30px;
 
     &--foto {
-      padding-top: 112px;
+      padding-top: 111px;
     }
 
     &--form {
@@ -209,8 +210,9 @@
     &--form {
       padding-top: 27px;
       padding-bottom: 28px;
-      padding-left: 377px;
+      padding-left: 376px;
       padding-right: 377px;
+      text-align: center;
     }
   }
 
