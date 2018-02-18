@@ -415,7 +415,7 @@ textarea::-webkit-input-placeholder {
     }
 
     &--text {
-      padding-top: 55px;
+      padding-top: 26px;
       padding-bottom: 56px;
       margin: 0 auto;
       margin-left: 350px;
@@ -423,12 +423,12 @@ textarea::-webkit-input-placeholder {
 
       &::before {
         left: -320px;
-        top: 67px;
+        top: 40px;
       }
 
       &::after {
         right: -356px;
-        top: 67px;
+        top: 40px;
       }
     }
   }
