@@ -101,6 +101,7 @@ input[type="checkbox"]:focus + label::before {
   overflow: scroll;
   margin-top: -5px;
   margin-bottom: 7px;
+  resize: none;
 }
 
 .form__label {

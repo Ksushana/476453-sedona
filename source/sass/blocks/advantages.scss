@@ -347,4 +347,9 @@
   .advantages__item--small .advantages__description {
     padding-top: 22px;
   }
+
+  .advantages__item:nth-child(4) .advantages__description {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }
