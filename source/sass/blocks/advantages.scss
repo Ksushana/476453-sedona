@@ -50,17 +50,18 @@
 .advantages__header {
   @include zero;
   @include font-large;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 }
 
 .advantages__description {
   @include zero;
   padding-top: 13px;
-  padding-bottom: 39px;
+  padding-bottom: 40px;
 }
 
 .advantages__item--small .advantages__description {
   padding-bottom: 29px;
+  padding-top: 14px;
 }
 
 

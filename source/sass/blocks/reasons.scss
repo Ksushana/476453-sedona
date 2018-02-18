@@ -8,10 +8,10 @@
 }
 
 .reasons__header {
-  padding-top: 42px;
+  padding-top: 40px;
   font-weight: 26px;
   margin: 0 30px;
-  padding-bottom: 25px;
+  padding-bottom: 27px;
   position: relative;
 
   @include flex-column;
@@ -38,7 +38,7 @@
 
   @include zero;
   @include font-small;
-  margin-top: 25px;
+  margin-top: 26px;
   color: #333333;
 }
 

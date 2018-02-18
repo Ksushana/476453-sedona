@@ -5,7 +5,8 @@
 .radio__inputs {
   @include flex-column;
   // min-height: 195px;
-  padding-top: 5px;
+  padding-top: 4px;
+  padding-bottom: 2px;
   justify-content: space-between;
 }
 
