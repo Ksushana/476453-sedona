@@ -85,6 +85,10 @@
       margin-left: auto;
       width: 502px;
     }
+
+    &--email {
+      margin-top: 0;
+    }
   }
 
   .contacts__label {
@@ -107,11 +111,5 @@
 
   .form__email {
     margin-left: 14px;
-  }
-
-  .contacts__label-wrapper {
-    &--email {
-      margin-top: 0;
-    }
   }
 }
