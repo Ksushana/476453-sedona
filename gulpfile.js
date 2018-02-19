@@ -15,6 +15,8 @@ var rename = require("gulp-rename");
 var del = require("del");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
+var htmlmin = require("gulp-htmlmin");
+var uglify = require("gulp-uglify");
 
 gulp.task("clean", function () {
   return del("build");
@@ -75,7 +77,19 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
     .pipe(gulp.dest("build"));
+});
+
+gulp.task("jsmin", function() {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(rename(function (path) {
+      path.basename +=".min";
+    }))
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("serve", function() {
@@ -100,6 +114,7 @@ gulp.task("build", function (done) {
     "webp",
     "sprite",
     "html",
+    "jsmin",
     done
   );
 });

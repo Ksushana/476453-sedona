@@ -3,8 +3,8 @@
 
 .accomodation {
   text-align: center;
-  padding-top: 29px;
-  padding-bottom: 48px;
+  padding-top: 27px;
+  padding-bottom: 52px;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -27,13 +27,13 @@
 }
 
 .accomodation__button {
-  margin-top: 34px;
+  margin-top: 36px;
 }
 
 
 @media (min-width: 768px) {
   .accomodation {
-    padding-top: 58px;
+    padding-top: 56px;
     padding-bottom: 60px;
   }
 
@@ -43,7 +43,7 @@
   }
 
   .accomodation__request {
-    padding: 30px 130px 40px;
+    padding: 26px 130px 45px;
   }
 
   .accomodation__request br {
@@ -63,6 +63,6 @@
   }
 
   .accomodation__request {
-    padding: 28px 350px 46px;
+    padding: 26px 350px 48px;
   }
 }

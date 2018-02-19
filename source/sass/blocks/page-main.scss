@@ -40,10 +40,10 @@
   &::before {
     content: "";
     position: absolute;
-    width: 330px;
+    width: 320px;
     height: 30px;
     bottom: 0;
-    left: -5px;
+    left: 0;
     z-index: 100;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-size: 333px auto;
@@ -58,23 +58,27 @@
 
   &--foto {
     @include font-large;
+    padding-top: 38px;
   }
 
   &--form {
     @include font-large;
+    padding-top: 37px;
   }
 }
 
 .page-main__intro {
   @include zero;
+  position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
   color: #333333;
 
   &--photo {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-top: 25px;
+    padding-bottom: 31px;
     line-height: 24px;
   }
 
@@ -84,6 +88,16 @@
     padding-top: 25px;
     // padding-bottom: 35px;
     line-height: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 320px;
+      border-bottom: 1px solid $grey-line;
+      right: 0;
+      bottom: 12px;
+    }
   }
 }
 
@@ -125,7 +139,7 @@
     }
 
     &--short {
-      height: 290px;
+      height: 289px;
       background-position: 155px 96px, center -225px;
       background-size: 60%, cover;
       background-image: url("../img/text-sedona.svg"), url("../img/bg-back-tablet@1x.jpg");
@@ -146,31 +160,18 @@
       z-index: 3;
       background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
     }
-
-    // // &:after {
-    // //   content: "";
-    // //   position: absolute;
-    // //   width: 700px;
-    // //   height: 50px;
-    // //   bottom: 10px;
-    // //   left: 40px;
-    // //   z-index: 100;
-    // //   background-image: url("../img/bg-intro-triangle-mobile.svg");
-    // //   background-repeat: no-repeat;
-    // //   // background-size: cover;
-    // }
   }
 
   .page-main__header {
     font-size: 30px;
 
     &--foto {
-      padding-top: 77px;
+      padding-top: 76px;
       padding-bottom: 5px;
     }
 
     &--form {
-      padding-top: 77px;
+      padding-top: 75px;
       padding-bottom: 5px;
     }
   }
@@ -178,6 +179,15 @@
   .page-main__intro {
     padding-left: 165px;
     padding-right: 165px;
+    padding-bottom: 31px;
+
+    &--form {
+      padding-right: 163px;
+
+      &::before {
+        display: none;
+      }
+    }
   }
 }
 
@@ -186,7 +196,7 @@
     font-size: 30px;
 
     &--foto {
-      padding-top: 112px;
+      padding-top: 111px;
     }
 
     &--form {
@@ -202,8 +212,9 @@
     &--form {
       padding-top: 27px;
       padding-bottom: 28px;
-      padding-left: 377px;
-      padding-right: 377px;
+      padding-left: 378px;
+      padding-right: 378px;
+      text-align: center;
     }
   }
 

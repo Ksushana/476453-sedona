@@ -3,9 +3,13 @@
 
 .checkbox__inputs {
   @include flex-column;
-  height: 295px;
+  // height: 295px;
   justify-content: space-between;
   position: relative;
+}
+
+.checkbox__item {
+  margin-bottom: 40px;
 }
 
 .checkbox__item label {
@@ -14,6 +18,8 @@
   padding-left: 80px;
   text-transform: none;
   position: relative;
+  display: block;
+  max-width: 270px;
 }
 
 .checkbox__item label::before {
@@ -33,8 +39,8 @@
   background-position: center;
 }
 
-.checkbox__item:active input:checked + label::before {
-  fill: #a4a4a4;
+.checkbox__item input:active + label::before {
+  outline: 2px solid red;
 }
 
 .checkbox__item:hover label::before {
@@ -45,20 +51,30 @@
   background-color: #d5d5d5;
 }
 
+.checkbox__item input:hover {
+  outline: 2px solid red;
+}
+
+.checkbox__item:active input:checked + label::before {
+  background-image: url("../img/icon-tick-active.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (min-width: 768px) {
   .checkbox__inputs {
-    height: 215px;
     flex-direction: row;
     padding-left: 95px;
     padding-right: 45px;
-    padding-top: 43px;
+    padding-top: 40px;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .checkbox__item {
     min-width: 248px;
-    margin-bottom: 0;
+    margin-bottom: 48px;
+    max-width: 250px;
 
     &:nth-child(2) {
       order: 1;
@@ -72,27 +88,35 @@
       order: 2;
     }
   }
+
+  .checkbox__item label::before {
+    top: -15px;
+  }
 }
 
 @media (min-width: 1200px) {
   .checkbox__inputs {
-    height: 80px;
     flex-direction: row;
-    padding-left: 55px;
+    padding-left: 60px;
     padding-right: 65px;
-    padding-top: 41px;
+    padding-top: 43px;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .checkbox__item {
     margin-left: auto;
     min-width: 200px;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 30px;
+
 
     &:first-child {
       margin-left: 0;
-      margin-right: 10px;
+      margin-right: 20px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 20px;
     }
   }
 

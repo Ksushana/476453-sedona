@@ -4,14 +4,16 @@
 
 .radio__inputs {
   @include flex-column;
-  height: 195px;
-  padding-top: 5px;
+  // min-height: 195px;
+  padding-top: 4px;
+  padding-bottom: 2px;
   justify-content: space-between;
 }
 
 .radio__item {
   text-transform: none;
   position: relative;
+  margin-bottom: 28px;
 }
 
 .radio__item label {
@@ -60,16 +62,10 @@
 @media (min-width: 768px) {
   .radio {
     position: relative;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      height: 292px;
-      width: 1px;
-      border-left: 1px solid $grey-line;
-      right: 0;
-      top: 8px;
-    }
+  .radio__item {
+    margin-bottom: 38px;
   }
 
   .radio__item label {
@@ -77,10 +73,24 @@
   }
 
   .radio__inputs {
-    padding-top: 47px;
+    padding-top: 60px;
     margin-top: auto;
-    height: 280px;
     justify-content: space-around;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: $grey-line;
+      top: -20px;
+      right: 0;
+    }
+  }
+
+  .radio-item {
+    margin-top: 15px;
   }
 }
 

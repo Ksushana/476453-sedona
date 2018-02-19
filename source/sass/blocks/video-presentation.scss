@@ -2,6 +2,7 @@
 @import "../mixins";
 
 .video-presentation {
+  @include flex_column;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 109px;
@@ -20,6 +21,10 @@
 
 .video-presentation__content {
   position: relative;
+}
+
+.video-presentation__poster img {
+  display: block;
 }
 
 .video-presentation__controls {
@@ -94,7 +99,7 @@
 
 @media (min-width: 768px) {
   .video-presentation {
-    padding-top: 68px;
+    padding-top: 66px;
     padding-bottom: 47px;
   }
 
@@ -103,7 +108,7 @@
   }
 
   .video-presentation__intro {
-    padding: 28px 175px 72px;
+    padding: 27px 175px 74px;
   }
 
   .video-presentation__poster {
@@ -172,12 +177,12 @@
 
 @media (min-width: 1200px) {
   .video-presentation {
-    padding-top: 75px;
-    padding-bottom: 90px;
+    padding-top: 70px;
+    padding-bottom: 88px;
   }
 
   .video-presentation__intro {
-    padding: 25px 380px 70px;
+    padding: 27px 380px 72px;
   }
 
   .video-presentation__poster {

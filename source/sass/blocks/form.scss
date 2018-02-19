@@ -1,6 +1,7 @@
 @import "../variables";
 @import "../mixins";
 
+
 input[placeholder]:hover,
 textarea[placeholder]:hover {
   background-color: #a4a4a4;
@@ -12,9 +13,18 @@ textarea[placeholder]:focus {
   box-shadow: inset 0 0 0 4px #a4a4a4;
 }
 
+input[type="radio"]:focus + label::before,
+input[type="checkbox"]:focus + label::before {
+  outline: 2px solid #1e90ff;
+}
+
 .form {
   @include flex-column;
   padding-top: 2px;
+}
+
+.form input {
+  display: block;
 }
 
 .form__fieldset {
@@ -22,34 +32,28 @@ textarea[placeholder]:focus {
   border: none;
   margin: 0;
   padding: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
   width: 100%;
-
-  &::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 320px;
-    border-bottom: 1px solid $grey-line;
-    right: 0;
-    top: -15px;
-  }
+  border-bottom: 1px solid $grey-line;
 
   &--contacts {
-    padding-bottom: 30px;
+    padding-bottom: 14px;
+  }
+
+  &--radio {
+    padding-bottom: 15px;
+    margin-bottom: 0;
   }
 
   &--checkbox {
     padding-top: 15px;
-
-    &::before {
-      top: 9px;
-    }
+    padding-bottom: 0;
   }
 
   &--text {
-    &::before {
-      top: 6px;
-    }
+    border-bottom: none;
+    margin-bottom: 18px;
   }
 }
 
@@ -61,24 +65,43 @@ textarea[placeholder]:focus {
 
   @include font-large;
 
+  &--full-name {
+    margin-left: 68px;
+    padding-bottom: 2px;
+  }
+
+  &--contacts {
+    margin-left: 20px;
+    padding-top: 2px;
+  }
+
+  &--radio {
+    margin-left: 20px;
+    padding-top: 3px;
+  }
+
   &--checkbox {
-    padding-top: 30px;
+    padding-top: 18px;
+    padding-bottom: 2px;
+    width: 280px;
   }
 
   &--text {
-    padding-top: 25px;
+    margin-left: 30px;
   }
 }
 
 .form__textarea {
+  @include zero;
   width: 100%;
   height: 160px;
-  padding: 20px;
+  padding: 18px 20px;
   background-color: $dark-grey;
   border: none;
   overflow: scroll;
   margin-top: -5px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
+  resize: none;
 }
 
 .form__label {
@@ -109,10 +132,12 @@ input:focus::-webkit-input-placeholder {
 
 input::-moz-placeholder {
   color: #000000;
+  opacity: 1;
 }
 
 input:-moz-placeholder {
   color: #000000;
+  opacity: 1;
 }
 
 input::-webkit-input-placeholder {
@@ -133,10 +158,12 @@ textarea:focus::-webkit-input-placeholder {
 
 textarea::-moz-placeholder {
   color: #000000;
+  opacity: 1;
 }
 
 textarea:-moz-placeholder {
   color: #000000;
+  opacity: 1;
 }
 
 textarea::-webkit-input-placeholder {
@@ -149,8 +176,13 @@ textarea::-webkit-input-placeholder {
 
 .form__button {
   width: 280px;
-  margin: 20px auto 43px;
+  margin: 21px auto 39px;
   font-weight: bold;
+}
+
+.form__tel,
+.form__email {
+  margin: 0;
 }
 
 
@@ -164,6 +196,7 @@ textarea::-webkit-input-placeholder {
   .form__fieldset {
 
     padding: 0;
+    border-bottom: none;
 
     &::before {
       display: none;
@@ -172,6 +205,7 @@ textarea::-webkit-input-placeholder {
     &--full-name {
       width: 267px;
       margin-left: auto;
+      margin-bottom: 0;
     }
 
     &--radio {
@@ -185,77 +219,14 @@ textarea::-webkit-input-placeholder {
 
     &--checkbox {
       width: 100%;
-      margin-top: 35px;
+      margin-top: 18px;
     }
 
     &--text {
+      @include zero;
       width: 100%;
+      margin-bottom: 0;
     }
-  }
-
-  .form__legend {
-    @include font-huge;
-    text-align: left;
-    margin-left: 0;
-    margin-right: auto;
-
-    &--contacts {
-      padding-top: 48px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    &--checkbox {
-      padding-top: 5px;
-      margin: 0 auto;
-
-      // padding-left: 120px;
-      // padding-right: 120px;
-      text-align: center;
-
-      &::before {
-        left: 0;
-      }
-
-      &::after {
-        right: 0;
-      }
-    }
-
-    &--text {
-      // text-align: center;
-      margin: 0 auto;
-      padding-top: 40px;
-      padding-bottom: 55px;
-
-      &::before {
-        left: -196px;
-        top: 50px;
-      }
-
-      &::after {
-        right: -196px;
-        top: 50px;
-      }
-    }
-  }
-
-  .form__textarea {
-    height: 160px;
-  }
-
-  .form__button {
-    width: 323px;
-    margin-right: auto;
-    margin-left: 0;
-    margin-top: 53px;
-    font-weight: bold;
-  }
-
-  .form__note {
-    display: block;
-    margin-right: 0;
-    margin-top: 75px;
   }
 
   .form__legend--contacts,
@@ -283,14 +254,106 @@ textarea::-webkit-input-placeholder {
       bottom: 15px;
     }
   }
+
+  .form__legend {
+    @include font-huge;
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+
+    &--full-name {
+      padding-top: 8px;
+      margin-bottom: 54px;
+      padding-bottom: 1px;
+    }
+
+    &--radio {
+      padding-top: 8px;
+    }
+
+    &--contacts {
+      padding-top: 45px;
+      margin: 0 auto;
+      text-align: center;
+      margin-left: 185px;
+    }
+
+    &--checkbox {
+      padding-top: 4px;
+      margin: 0 auto;
+      text-align: center;
+      margin-left: 185px;
+      width: 280px;
+
+      &::before {
+        // left: 0;
+        top: 30px;
+      }
+
+      &::after {
+        // right: 0;
+        top: 30px;
+      }
+    }
+
+    &--text {
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 21px;
+      padding-bottom: 60px;
+      margin-left: 195px;
+
+      &::before {
+        left: -196px;
+        top: 34px;
+      }
+
+      &::after {
+        right: -196px;
+        top: 34px;
+      }
+    }
+  }
+
+  .form__textarea {
+    height: 160px;
+    resize: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 15px;
+    vertical-align: bottom;
+  }
+
+  .form__button {
+    width: 323px;
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 57px;
+    margin-bottom: 46px;
+    font-weight: bold;
+    padding-left: 0;
+    padding-right: 14px;
+  }
+
+  .form__note {
+    display: block;
+    margin-right: 0;
+    margin-top: 77px;
+  }
+
+  .form__legend--contacts::before,
+  .form__legend--contacts::after {
+    bottom: 13px;
+  }
+
+  .form__legend--checkbox::before,
+  .form__legend--checkbox::after {
+    bottom: 25px;
+  }
 }
 
 
 @media (min-width: 1200px) {
-  .form {
-    margin-bottom: 5px;
-  }
-
   .form__fieldset {
     &--full-name {
       width: 400px;
@@ -299,14 +362,15 @@ textarea::-webkit-input-placeholder {
     }
 
     &--radio {
-      width: 412px;
+      width: 540px;
       padding-left: 75px;
     }
 
     &--text {
       padding-left: 60px;
       padding-right: 60px;
-      margin-top: 13px;
+      margin-top: 10px;
+      margin-bottom: 8px;
     }
 
     &--checkbox {
@@ -315,41 +379,56 @@ textarea::-webkit-input-placeholder {
   }
 
   .form__legend {
+    &--full-name {
+      margin-bottom: 55px;
+      padding-top: 3px;
+    }
+
     &--radio {
-      text-align: right;
+      padding-top: 3px;
+      margin-left: 61px;
     }
 
     &--contacts {
-      padding-top: 48px;
+      padding-top: 45px;
+      margin: 0 auto;
+      margin-left: 400px;
     }
 
     &--checkbox {
       padding-left: 0;
       padding-right: 0;
+      margin: 0 auto;
+      margin-left: 400px;
+      padding-bottom: 0;
+      padding-top: 1px;
 
       &::before {
         left: -335px;
-        top: 30px;
+        top: 26px;
       }
 
       &::after {
         right: -335px;
-        top: 30px;
+        top: 26px;
       }
     }
 
     &--text {
-      padding-top: 70px;
-      padding-bottom: 60px;
+      padding-top: 26px;
+      padding-bottom: 56px;
+      margin: 0 auto;
+      margin-left: 350px;
+
 
       &::before {
-        left: -356px;
-        top: 80px;
+        left: -320px;
+        top: 40px;
       }
 
       &::after {
         right: -356px;
-        top: 80px;
+        top: 40px;
       }
     }
   }
@@ -364,6 +443,7 @@ textarea::-webkit-input-placeholder {
     margin-right: auto;
     margin-left: 60px;
     margin-top: 50px;
+    padding-left: 11px;
   }
 
   .form__note {

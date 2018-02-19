@@ -9,7 +9,7 @@
 
 .copyright__text {
   @include zero;
-  padding-top: 15px;
+  padding-top: 13px;
   margin-right: 5px;
   margin-left: 94px;
 }
@@ -28,6 +28,11 @@
 
 
 @media (min-width: 1200px) {
+  .copyright {
+    padding-top: 7px;
+  }
+
+
   .copyright__text {
     padding-left: 103px;
   }
